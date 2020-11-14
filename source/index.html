@@ -107,7 +107,7 @@
       </section>
       <section class="prices">
         <h2 class="visually-hidden">Тарифные планы</h2>
-        <div class="prices__wrapper">
+        <div class="prices__wrapper slider">
           <table class="prices__table">
             <tr>
               <th class="prices__table-column-head prices__table-column-head--empty">
@@ -146,10 +146,67 @@
               <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
             </tr>
           </table>
+          <p class="prices__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </section>
-      <section class="contacts"></section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Наши контакты и адрес</h2>
+          <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__title">Звоните:</p>
+              <a class="contacts__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Пишите:</p>
+              <a class="contacts__value" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__title">Приезжайте в гости:</p>
+              <p class="contacts__value">ул. Большая Конюшенная, 19/8</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605375766861!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
     </main>
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="">
+          <img src="https://via.placeholder.com/74x23" width="145" height="40" alt="Логотип сайта Пинк">
+        </a>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--Twitter" href="">
+              <span class="visually-hidden">Ссылка на наш Twitter</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link  footer__social-link--Facebook" href="">
+              <span class="visually-hidden">Ссылка на наш Facebook</span>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link  footer__social-link--Youtube" href="">
+              <span class="visually-hidden">Ссылка на наш Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright">
+          <p>Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="https://via.placeholder.com/74x23" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
