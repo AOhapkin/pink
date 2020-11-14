@@ -19,10 +19,10 @@
               <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Фотографии</a>
+              <a class="site-list__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link">HTML Academy</a>
@@ -32,16 +32,123 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo-section">
-        <h1 class="visually-hidden">Сайт мобильного приложения Пинк</h1>
-        <p>Взгляните на жизнь иначе!</p>
-        <img src="https://via.placeholder.com/320x286" width="320" height="286" alt="Внешний вид приложения Пинк">
-        <a href="">Скачать приложение</a>
+      <h1 class="visually-hidden">Сайт мобильного приложения Пинк</h1>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Ссылки на наше приложение</h2>
+          <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+          <img class="promo__img" src="https://via.placeholder.com/320x286" width="320" height="286" alt="Внешний вид приложения Пинк">
+          <ul class="download-list">
+            <li class="download-list__item download-list__item--main-item">
+              <a class="download-list__link download-list__link--main-link button" href="">Скачать приложение</a>
+            </li>
+            <li class="download-list__item">
+              <a class="download-list__link download-list__link--ios" href="">Скачать версию для iOS</a>
+            </li>
+            <li class="download-list__item">
+              <a class="download-list__link download-list__link--android" href="">Скачать версию для Android</a>
+            </li>
+            <li class="download-list__item">
+              <a class="download-list__link download-list__link--android" href="">Скачать версию для Windows</a>
+            </li>
+          </ul>
+          <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
-      <section class="advantages-section"></section>
-      <section class="reviews-section"></section>
-      <section class="price-section"></section>
-      <section class="contacts-section"></section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+        <div class="advantages__wrapper">
+          <p class="advantages__intro">Устали от серости мегаполиса?</p>
+          <p class="advantages__intro">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--good-mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--photo-decoration">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--make-friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="article-preview">
+        <h2 class="visually-hidden">Ссылка на исследование</h2>
+        <div class="article-preview__wrapper">
+          <p class="article-preview__title">Эффект на 24 часа!</p>
+          <p class="article-preview__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="article-preview__link" href="">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="reviews__wrapper slider">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__blockquote">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite class="reviews__author">
+                  <p class="reviews__author-name">Николай Петров</p>
+                  <p class="reviews__about-author">25 лет, водитель трамвая</p>
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="prices">
+        <h2 class="visually-hidden">Тарифные планы</h2>
+        <div class="prices__wrapper">
+          <table class="prices__table">
+            <tr>
+              <th class="prices__table-column-head prices__table-column-head--empty">
+                &nbsp;
+              </th>
+              <th class="prices__table-column-head">
+                <p class="prices__name">База</p>
+                <p class="prices__sum">1,99 USD</p>
+              </th>
+              <th class="prices__table-column-head">
+                <span class="prices__bestseller">Хит</span>
+                <p class="prices__name">Стандарт</p>
+                <p class="prices__sum">3,99 USD</p>
+              </th>
+              <th class="prices__table-column-head">
+                <p class="prices__name">Анлим</p>
+                <p class="prices__sum">9,99 USD</p>
+              </th>
+            </tr>
+            <tr>
+              <td>Розовый фильтр</td>
+              <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
+              <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
+              <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
+            </tr>
+            <tr>
+              <td>Смайлики</td>
+              <td><span class="prices__is-available prices__is-available--not-available">Нет</span></td>
+              <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
+              <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
+            </tr>
+            <tr>
+              <td>Комментарии</td>
+              <td><span class="prices__is-available prices__is-available--not-available">Нет</span></td>
+              <td><span class="prices__is-available prices__is-available--not-available">Нет</span></td>
+              <td><span class="prices__is-available prices__is-available--available">Есть</span></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section class="contacts"></section>
     </main>
     <footer class="page-footer"></footer>
   </body>
