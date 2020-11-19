@@ -1,0 +1,53 @@
+.download-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  width: 300px;
+  list-style: none;
+}
+
+.download-list__item:not(:first-child):not(:last-child) {
+  margin-right: 35px;
+}
+
+.download-list__link {
+  @include text(18px, 18px, bold, $white);
+  display: block;
+  text-decoration: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.download-list__link--main-link {
+  width: 280px;
+  margin-bottom: 36px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 39px;
+  text-align: center;
+}
+
+.download-list__link--ios {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/apple-logo.png");
+}
+
+.download-list__link--android {
+  width: 43px;
+  height: 56px;
+  background-image: url("../img/android-logo.png");
+}
+
+.download-list__link--windows {
+  width: 44px;
+  height: 56px;
+  background-image: url("../img/windows-logo.png");
+}

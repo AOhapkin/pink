@@ -1,0 +1,20 @@
+.page-header {
+  @include text(18px, 32px, bold, $white);
+  color: $white;
+  background-color: $black-30;
+}
+
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.page-header--menu-open {
+  padding-top: 23px;
+  background-color: $main-dark;
+}

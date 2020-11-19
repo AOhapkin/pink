@@ -1,0 +1,28 @@
+.slider__toggles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 13px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+.slider__toggle {
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  border: 3px solid $white;
+  border-radius: 50%;
+  background-color: $main-dark;
+  opacity: 0.3;
+}
+
+.slider__toggle--current {
+  border: 3px solid $main-dark;
+  background-color: $white;
+  opacity: 1;
+}

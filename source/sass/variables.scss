@@ -1,0 +1,18 @@
+$main-dark: #283645;
+$main-dark-10: rgba(40, 54, 69, 0.1);
+$promo-backgound: #1D2631;
+$white: #FFFFFF;
+$white-15: rgba(255, 255, 255, 0.15);
+$black: #000000;
+$black-30: rgba(0, 0, 0, 0.3);
+$light-grey: #F2F2F2;
+$main-pink: #D22856;
+
+@mixin text($size: 14px, $line-height: 24px, $weight: 400, $color: $main-dark) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  color: $color;
+}
