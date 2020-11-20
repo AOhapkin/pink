@@ -1,0 +1,44 @@
+.prices {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $light-grey;
+}
+
+.prices__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices__table {
+  @include text(14px, 30px, normal, $main-dark);
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.prices__table-column-head {
+  width: 276px;
+  padding-top: 19px;
+  color: $white;
+  background-color: $main-dark;
+}
+
+.prices__table-column-head--empty {
+  background: none;
+}
+
+.prices__name {
+  @include text(16px, 30px, bold, $white);
+  margin: 0;
+  padding: 0;
+}
+
+.prices__sum {
+  @include text(18px, 30px, 300, $white);
+  margin: 0;
+  padding: 0;
+}
+
+.prices__table-cell {
+  background-color: $white;
+}

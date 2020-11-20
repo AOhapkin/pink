@@ -1,0 +1,45 @@
+.promo {
+  padding-bottom: 30px;
+  background-color: $promo-backgound;
+}
+
+.promo__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 395px;
+  padding-top: 23px;
+  text-align: center;
+  background-image: url("../img/back-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.promo__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.promo__slogan {
+  @include text(24px, 29px, 300, $white);
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.promo__img {
+  position: relative;
+}
+
+.promo__description {
+  @include text(14px, 25px, 300, $white);
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}

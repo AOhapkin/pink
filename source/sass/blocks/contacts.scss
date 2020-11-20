@@ -1,0 +1,24 @@
+.contacts__slogan {
+  @include text(24px, 1.2, 300, $main-dark);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__title {
+  @include text(18px, 25px, bold, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__text {
+  @include text(24px, 33px, 300, $main-pink);
+  margin: 0;
+  padding: 0;
+}

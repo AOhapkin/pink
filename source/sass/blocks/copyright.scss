@@ -1,0 +1,12 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.copyright__text {
+  @include text(14px, 18px, normal, $main-dark);
+  margin: 0;
+  padding: 0;
+}

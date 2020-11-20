@@ -1,0 +1,8 @@
+@mixin text($size: 14px, $line-height: 24px, $weight: 400, $color: $main-dark) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  color: $color;
+}

@@ -1,0 +1,18 @@
+.social-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid $main-dark-10;
+  border-radius: 50%;
+}

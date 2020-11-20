@@ -1,0 +1,68 @@
+.advantages {
+  padding-top: 41px;
+}
+
+.advantages__intro {
+  @include text(24px, 1.2, 300, $main-dark);
+  width: 280px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 83px;
+  padding-bottom: 287px;
+  list-style: none;
+  background-color: $light-grey;
+}
+
+.advantages__list::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  border-right: 100vw solid transparent;
+  border-top: 8vw solid $white;
+}
+
+.advantages__list::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 157px;
+  height: 277px;
+  background-image: url("../img/advan-iphone.png");
+  background-size: cover;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.advantages__title {
+  @include text(18px, 24px, bold, $black);
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.advantages__description {
+  @include text(14px, 24px, normal, $main-dark);
+  margin: 0;
+  padding: 0;
+  width: 280px;
+}

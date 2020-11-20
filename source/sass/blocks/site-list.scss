@@ -1,0 +1,23 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #283645;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  box-shadow: inset 0 1px 0 $white-15;
+}
+
+.site-list__link {
+  @include text(18px, 32px, bold, $white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
