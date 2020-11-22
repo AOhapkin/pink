@@ -7,6 +7,12 @@
   list-style: none;
 }
 
+.social-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .social-link {
   display: flex;
   justify-content: center;
