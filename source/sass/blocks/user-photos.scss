@@ -1,0 +1,96 @@
+.user-photos__wrapper {
+  position: relative;
+  padding-top: 54px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+.user-photos__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.user-photos__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 49px;
+}
+
+.user-photos__slogan {
+  @include text(14px, 30px, normal, $main-dark);
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.user-photos__list {
+  display: grid;
+  row-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-photos__item {
+  display: grid;
+}
+
+.user-photos__link {
+  position: relative;
+  display: block;
+}
+
+.user-photos__image {
+  display: block;
+  width: 100%;
+}
+
+.user-photos__image--best-photo {
+  position: relative;
+}
+
+.user-photos__marker {
+  @include text(12px, 24px, bold, $white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: $main-pink;
+}
+
+.user-photos__author-info {
+  display: grid;
+  margin: 0;
+  padding: 25px 17px;
+  background-color: $light-grey;
+}
+
+.user-photos__blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.user-photos__autor-name {
+  @include text(14px, 24px, bold, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.user-photos__time {
+  @include text(12px, 24px, 300, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.user-photos__text {
+  @include text(14px, 24px, normal, $main-dark);
+  margin: 0;
+  padding: 0;
+}
