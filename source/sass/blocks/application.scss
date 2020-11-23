@@ -1,0 +1,110 @@
+.application {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+.application__text {
+  @include text(14px, 30px, normal, $main-dark);
+  display: block;
+  margin: 0;
+  padding-right: 18px;
+  padding-left: 18px;
+  text-align: center;
+}
+
+.application__text--required {
+  text-transform: uppercase;
+}
+
+.application__accent {
+  color: $main-pink;
+}
+
+.application__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.application__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 44px;
+  padding-left: 20px;
+  border: none;
+}
+
+.application__fieldset:nth-of-type(2n) {
+  background-color: $light-grey;
+}
+
+.application__legend {
+  @include text(14px, 18px, normal, $main-pink);
+  display: none;
+  width: 220px;
+  float: left;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+}
+
+.application__fieldset:nth-of-type(2n) .application__legend {
+  display: block;
+}
+
+.application__label {
+  @include text(18px, 30px, normal, $main-dark);
+  width: 100%;
+  margin-bottom: 29px;
+}
+
+.application__label-info {
+  padding-left: 15px;
+}
+
+.application__label-info--checkbox {
+  padding-left: 55px;
+}
+
+.application__label-info--radio {
+  padding-left: 55px;
+}
+
+.application__label--text-input {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $main-pink;
+}
+
+.application__text-input {
+  width: 100%;
+  padding: 10px 20px;
+  @include text(18px, 30px, normal, $main-dark);
+  border: 2px solid $input-border-grey;
+}
+
+.application__text-input::placeholder {
+  @include text(18px, 30px, normal, $main-dark);
+  opacity: 1;
+}
+
+.application__button {
+  @include text(18px, 30px, bold, $white);
+  width: 280px;
+  margin-bottom: 30px;
+  padding: 15px;
+  text-transform: uppercase;
+  background: $submit-green;
+  border: 2px solid $submit-green;
+  border-radius: 1px;
+}
+

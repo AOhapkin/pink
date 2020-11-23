@@ -1,19 +1,26 @@
 .promo {
-  padding-bottom: 30px;
   background-color: $promo-backgound;
+}
+
+.promo--main-page {
+  padding-bottom: 30px;
 }
 
 .promo__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 395px;
   padding-top: 23px;
+  padding-bottom: 51px;
   text-align: center;
   background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+.promo__header--main-page {
+  min-height: 395px;
 }
 
 .promo__bottom {
