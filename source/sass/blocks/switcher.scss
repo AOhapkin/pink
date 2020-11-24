@@ -1,0 +1,15 @@
+.switcher__controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.switcher__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}

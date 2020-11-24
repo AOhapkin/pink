@@ -86,9 +86,9 @@
 }
 
 .application__text-input {
+  @include text(18px, 30px, normal, $main-dark);
   width: 100%;
   padding: 10px 20px;
-  @include text(18px, 30px, normal, $main-dark);
   border: 2px solid $input-border-grey;
 }
 
@@ -107,4 +107,3 @@
   border: 2px solid $submit-green;
   border-radius: 1px;
 }
-
