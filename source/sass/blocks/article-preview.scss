@@ -1,3 +1,61 @@
 .article-preview {
   display: none;
+  @media (min-width: $tablet) {
+    display: block;
+  }
+  @media (min-width: $desktop) {
+    background-color: $light-grey;
+  }
+}
+
+.article-preview__wrapper {
+  position: relative;
+  display: grid;
+  row-gap: 24px;
+  width: 50%;
+  margin-left: auto;
+  padding-top: 102px;
+  padding-right: 20px;
+  padding-bottom: 102px;
+  @media (min-width: $desktop) {
+    row-gap: 37px;
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 370px;
+    padding-bottom: 120px;
+  }
+}
+
+.article-preview__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 54px;
+  left: -272px;
+  width: 238px;
+  height: 276px;
+  background-image: url("../img/article-preview-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: $desktop) {
+    left: 0px;
+  }
+}
+
+.article-preview__title {
+  @include text(30px, 36px, bold, $black);
+  margin: 0;
+  padding: 0;
+}
+
+.article-preview__description {
+  @include text(14px, 24px, normal, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.article-preview__link {
+  @include text(14px, 24px, normal, $main-pink);
+  margin: 0;
+  padding: 0;
 }
