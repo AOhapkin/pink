@@ -38,10 +38,6 @@
   text-align: center;
 }
 
-.promo__img {
-  position: relative;
-}
-
 .promo__description {
   @include text(14px, 25px, 300, $white);
   margin: 0;

@@ -1,0 +1,87 @@
+.download {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: $main-dark;
+  @media (min-width: $tablet) {
+    background: none;
+  }
+}
+
+.download__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  padding-top: 28px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  list-style: none;
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
+}
+
+.download__item:not(:first-child):not(:last-child) {
+  margin-right: 35px;
+}
+
+.download__item--main-item {
+  width: 100%;
+}
+
+.download__link {
+  @include text(18px, 18px, bold, $white);
+  display: block;
+  text-decoration: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.download__link--main-link {
+  margin-bottom: 36px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  border: 3px solid $white;
+  box-sizing: border-box;
+  border-radius: 39px;
+  text-align: center;
+}
+
+.download__link--ios {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/apple-logo.png");
+}
+
+.download__link--android {
+  width: 43px;
+  height: 56px;
+  background-image: url("../img/android-logo.png");
+}
+
+.download__link--windows {
+  width: 44px;
+  height: 56px;
+  background-image: url("../img/windows-logo.png");
+}
+
+.download__description {
+  @include text(14px, 25px, 300, $white);
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 270px;
+  text-align: center;
+  @media (min-width: $tablet) {
+    @include text(18px, 24px, 300, $white);
+    width: 310px;
+  }
+}

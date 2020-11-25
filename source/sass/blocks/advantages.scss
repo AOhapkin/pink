@@ -2,28 +2,53 @@
   padding-top: 41px;
 }
 
+.advantages__intro-wrapper {
+  display: grid;
+  row-gap: 30px;
+  @media (min-width: $tablet) {
+    row-gap: 0;
+  }
+}
+
 .advantages__intro {
   @include text(24px, 1.2, 300, $main-dark);
   width: 280px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
   padding: 0;
   text-align: center;
+  @media (min-width: $tablet) {
+    @include text(40px, 54px, 300, $main-dark);
+    width: 600px;
+  }
+  @media (min-width: $desktop) {
+    @include text(50px, 68px, 300, $main-dark);
+    width: 780px;
+  }
 }
 
-.advantages__list {
+.advantages__intro:last-child {
+  @media (min-width: $tablet) {
+    width: 400px;
+  }
+  @media (min-width: $desktop) {
+    width: 500px;
+  }
+}
+
+.advantages__list-wrapper {
   position: relative;
-  margin: 0;
-  padding: 0;
-  padding-top: 83px;
   padding-bottom: 287px;
-  list-style: none;
   background-color: $light-grey;
+  @media (min-width: $tablet) {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
 }
 
-.advantages__list::before {
+.advantages__list-wrapper::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +58,7 @@
   border-top: 8vw solid $white;
 }
 
-.advantages__list::after {
+.advantages__list-wrapper::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -43,6 +68,33 @@
   height: 277px;
   background-image: url("../img/advan-iphone.png");
   background-size: cover;
+  @media (min-width: $tablet) {
+    left: 20px;
+    transform: none;
+    width: 268px;
+    height: 480px;
+  }
+  @media (min-width: $desktop) {
+    background-image: none;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 83px;
+  list-style: none;
+  @media (min-width: $tablet) {
+    width: 310px;
+    margin-left: auto;
+  }
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .advantages__item {
@@ -50,7 +102,13 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 31px;
-  text-align: center;
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+  }
+  @media (min-width: $desktop) {
+    align-items: center;
+    padding-top: 360px;
+  }
 }
 
 .advantages__title {
@@ -58,6 +116,12 @@
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
+  @media (min-width: $desktop) {
+    @include text(30px, 30px, bold, $black);
+    width: 234px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
 
 .advantages__description {
@@ -65,4 +129,14 @@
   margin: 0;
   padding: 0;
   width: 280px;
+  text-align: center;
+  @media (min-width: $tablet) {
+    width: 310px;
+    text-align: left;
+  }
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, normal, $main-dark);
+    width: 245px;
+    text-align: center;
+  }
 }
