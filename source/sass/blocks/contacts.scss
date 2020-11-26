@@ -1,14 +1,54 @@
+.contacts__wrapper {
+  display: grid;
+  justify-items: center;
+}
+
 .contacts__slogan {
-  @include text(24px, 1.2, 300, $main-dark);
+  @include text(24px, 29px, 300, $main-dark);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 230px;
   margin: 0;
   padding: 0;
   text-align: center;
+  @media (min-width: $tablet) {
+    @include text(40px, 54px, 300, $main-dark);
+    width: 370px;
+  }
+  @media (min-width: $desktop) {
+    @include text(50px, 68px, 300, $main-dark);
+    width: 470px;
+  }
 }
 
 .contacts__list {
+  display: grid;
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contacts__item {
+  display: grid;
+  justify-items: center;
+}
+
+.contacts__item:nth-child(3) {
+  @media (min-width: $tablet) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  @media (min-width: $desktop) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }
 
 .contacts__title {
