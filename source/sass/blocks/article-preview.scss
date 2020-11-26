@@ -1,8 +1,10 @@
 .article-preview {
   display: none;
+
   @media (min-width: $tablet) {
     display: block;
   }
+
   @media (min-width: $desktop) {
     background-color: $light-grey;
   }
@@ -17,6 +19,7 @@
   padding-top: 102px;
   padding-right: 20px;
   padding-bottom: 102px;
+
   @media (min-width: $desktop) {
     row-gap: 37px;
     width: $content-desktop;
@@ -37,6 +40,7 @@
   background-image: url("../img/article-preview-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
   @media (min-width: $desktop) {
     left: 0;
   }

@@ -4,9 +4,11 @@
   margin: 0;
   padding: 0;
   border: none;
+
   @media (min-width: $tablet) {
     height: 374px;
   }
+
   @media (min-width: $desktop) {
     height: 502px;
   }

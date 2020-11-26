@@ -9,10 +9,12 @@
   align-items: center;
   gap: 30px;
   padding: 40px 20px;
+
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop) {
     width: $content-desktop;
     margin-right: auto;

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+
   @media (min-width: $desktop) {
     padding-top: 120px;
   }
@@ -38,6 +39,7 @@
   row-gap: 13px;
   align-items: center;
   padding-top: 27px;
+
   @media (min-width: $tablet) {
     flex-direction: column;
   }
@@ -48,6 +50,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
   @media (min-width: $tablet) {
     @include text(18px, 30px, normal, $main-dark);
     padding-bottom: 51px;
@@ -58,6 +61,7 @@
   @include text(18px, 30px, bold, $black);
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet) {
     @include text(20px, 30px, bold, $black);
   }
@@ -67,6 +71,7 @@
   display: none;
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet) {
     @include text(14px, 30px, normal, $main-dark);
     display: block;

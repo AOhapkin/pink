@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -26,6 +27,7 @@
   border-top: 1px solid $black;
   border-bottom: 1px solid $black;
   box-shadow: inset 0 1px 0 $white-15;
+
   @media (min-width: $desktop) {
     @include text(18px, 18px, normal, $white);
     padding-top: 0;
