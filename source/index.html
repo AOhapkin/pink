@@ -2,21 +2,24 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page-header--menu-open">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <svg width="74" height="23" fill="none"><path d="M.005 1.549c0-.336.13-.66.365-.9C.604.41.922.27 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 01-.754 1.28 1.269 1.269 0 01-1.717-.758 1.28 1.28 0 01-.062-.522V1.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04zM21.593 1.389a1.282 1.282 0 01.755-1.28 1.268 1.268 0 011.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 01-.754 1.28 1.27 1.27 0 01-1.717-.758 1.282 1.282 0 01-.063-.522V1.389zM30.674 1.419A1.278 1.278 0 0131.926.173h.348a1.535 1.535 0 011.281.737l13.6 17.4V1.36A1.239 1.239 0 0148.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874v20.292a1.14 1.14 0 01-.703 1.092 1.13 1.13 0 01-.449.085h-.129a1.695 1.695 0 01-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 01-1.191 1.247 1.238 1.238 0 01-1.212-1.247V1.42h-.04zM55.938 1.389a1.282 1.282 0 01.755-1.28 1.268 1.268 0 011.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 011.222 1.256 1.29 1.29 0 01-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 01-.838 1.191 1.228 1.228 0 01-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 01-.78 1.17 1.259 1.259 0 01-1.648-.685 1.27 1.27 0 01-.096-.485V1.389h-.01z" fill="#fff"/></svg>
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-            <svg class="main-nav__toggle-icon main-nav__toggle-icon--menu-close" width="23" height="23" fill="none"><path d="M20.849 0L0 20.849 2.151 23 23 2.151 20.849 0z" fill="#fff"/><path d="M2.151 0L0 2.151 20.849 23 23 20.849 2.151 0z" fill="#fff"/></svg>
-          </button>
-          <div class="main-nav__wrapper">
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="page-header__top-wrapper">
+          <div class="page-header__logo">
+            <a href="">
+              <svg width="74" height="23" fill="none"><path d="M.005 1.549c0-.336.13-.66.365-.9C.604.41.922.27 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 01-.754 1.28 1.269 1.269 0 01-1.717-.758 1.28 1.28 0 01-.062-.522V1.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04zM21.593 1.389a1.282 1.282 0 01.755-1.28 1.268 1.268 0 011.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 01-.754 1.28 1.27 1.27 0 01-1.717-.758 1.282 1.282 0 01-.063-.522V1.389zM30.674 1.419A1.278 1.278 0 0131.926.173h.348a1.535 1.535 0 011.281.737l13.6 17.4V1.36A1.239 1.239 0 0148.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874v20.292a1.14 1.14 0 01-.703 1.092 1.13 1.13 0 01-.449.085h-.129a1.695 1.695 0 01-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 01-1.191 1.247 1.238 1.238 0 01-1.212-1.247V1.42h-.04zM55.938 1.389a1.282 1.282 0 01.755-1.28 1.268 1.268 0 011.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 011.222 1.256 1.29 1.29 0 01-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 01-.838 1.191 1.228 1.228 0 01-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 01-.78 1.17 1.259 1.259 0 01-1.648-.685 1.27 1.27 0 01-.096-.485V1.389h-.01z" fill="#fff"/></svg>
+            </a>
+            <button class="page-header__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+              <svg class="page-header__toggle-icon" width="23" height="23" fill="none"><path d="M20.849 0L0 20.849 2.151 23 23 2.151 20.849 0z" fill="#fff"/><path d="M2.151 0L0 2.151 20.849 23 23 20.849 2.151 0z" fill="#fff"/></svg>
+            </button>
+          </div>
+          <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link">Главная</a>
@@ -28,58 +31,67 @@
                 <a class="site-list__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML&nbsp;Academy</a>
               </li>
             </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="page-header__bottom">
+        <div class="page-header__bottom-wrapper">
+          <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
+          <div class="download">
+            <ul class="download__list">
+              <li class="download__item download__item--main-item">
+                <a class="download__link download__link--main-link button" href="https://apps.apple.com/" target="blank">Скачать&nbsp;приложение</a>
+              </li>
+              <li class="download__item">
+                <a class="download__link download__link--ios" href="https://apps.apple.com/" target="blank">
+                  <span class="visually-hidden">Скачать версию для iOS</span>
+                </a>
+              </li>
+              <li class="download__item">
+                <a class="download__link download__link--android" href="https://play.google.com/store/apps" target="blank">
+                  <span class="visually-hidden">Скачать версию для Android</span>
+                </a>
+              </li>
+              <li class="download__item">
+                <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/" target="blank">
+                  <span class="visually-hidden">Скачать версию для Windows</span>
+                </a>
+              </li>
+            </ul>
+            <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт мобильного приложения Пинк</h1>
-      <section class="promo promo--main-page">
-        <h2 class="visually-hidden">Ссылки на наше приложение</h2>
-        <div class="promo__header promo__header--main-page">
-          <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-        </div>
-        <div class="promo__bottom">
-          <ul class="download-list">
-            <li class="download-list__item download-list__item--main-item">
-              <a class="download-list__link download-list__link--main-link button" href="https://apps.apple.com/" target="blank">Скачать&nbsp;приложение</a>
-            </li>
-            <li class="download-list__item">
-              <a class="download-list__link download-list__link--ios" href="https://apps.apple.com/" target="blank"><span class="visually-hidden">Скачать версию для iOS</span></a>
-            </li>
-            <li class="download-list__item">
-              <a class="download-list__link download-list__link--android" href="https://play.google.com/store/apps" target="blank"><span class="visually-hidden">Скачать версию для Android</span></a>
-            </li>
-            <li class="download-list__item">
-              <a class="download-list__link download-list__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/" target="blank"><span class="visually-hidden">Скачать версию для Windows</span></a>
-            </li>
-          </ul>
-          <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества нашего приложения</h2>
-        <p class="advantages__intro">Устали от серости мегаполиса?</p>
-        <p class="advantages__intro">Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--good-mood">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item advantages__item--photo-decoration">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item advantages__item--make-friends">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="advantages__intro-wrapper">
+          <p class="advantages__intro">Устали от серости мегаполиса?</p>
+          <p class="advantages__intro">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="advantages__list-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--good-mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--photo-decoration">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--make-friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="article-preview visually-hidden">
+      <section class="article-preview">
         <h2 class="visually-hidden">Ссылка на исследование</h2>
         <div class="article-preview__wrapper">
           <p class="article-preview__title">Эффект на 24 часа!</p>
@@ -131,22 +143,66 @@
               </th>
             </tr>
             <tr>
-              <td class="prices__table-cell">Розовый фильтр</td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--available">Есть</span></td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--available">Есть</span></td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--available">Есть</span></td>
+              <td class="prices__row-name">Розовый фильтр</td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Розовый фильтр</span>
+                  <span class="prices__is-available">Есть</span>
+                </div>
+              </td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Розовый фильтр</span>
+                  <span class="prices__is-available">Есть</span>
+                </div>
+              </td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Розовый фильтр</span>
+                  <span class="prices__is-available">Есть</span>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td class="prices__table-cell">Смайлики</td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--not-available">Нет</span></td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--available">Есть</span></td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--available">Есть</span></td>
+              <td class="prices__row-name">Смайлики</td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Смайлики</span>
+                  <span class="prices__is-available prices__is-available--not-available">Нет</span>
+                </div>
+              </td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Смайлики</span>
+                  <span class="prices__is-available">Есть</span>
+                </div>
+              </td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Смайлики</span>
+                  <span class="prices__is-available">Есть</span>
+                </div>
+              </td>
             </tr>
             <tr>
-              <td class="prices__table-cell">Комментарии</td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--not-available">Нет</span></td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--not-available">Нет</span></td>
-              <td class="prices__table-cell"><span class="prices__is-available prices__is-available--available">Есть</span></td>
+              <td class="prices__row-name">Комментарии</td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Комментарии</span>
+                  <span class="prices__is-available prices__is-available--not-available">Нет</span>
+                </div>
+              </td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Комментарии</span>
+                  <span class="prices__is-available prices__is-available--not-available">Нет</span>
+                </div>
+              </td>
+              <td class="prices__cell">
+                <div class="prices__cell-wrapper">
+                  <span class="prices__cell-name">Комментарии</span>
+                  <span class="prices__is-available">Есть</span></td>
+                </div>
             </tr>
           </table>
           <p class="prices__toggles slider__toggles">
