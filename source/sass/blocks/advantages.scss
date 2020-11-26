@@ -1,10 +1,8 @@
-.advantages {
-  padding-top: 41px;
-}
-
 .advantages__intro-wrapper {
   display: grid;
   row-gap: 30px;
+  justify-items: center;
+  padding-top: 41px;
   @media (min-width: $tablet) {
     row-gap: 0;
   }
@@ -12,10 +10,8 @@
 
 .advantages__intro {
   @include text(24px, 1.2, 300, $main-dark);
-  width: 280px;
+  width: 240px;
   margin: 0;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0;
   text-align: center;
   @media (min-width: $tablet) {
@@ -40,6 +36,7 @@
 .advantages__list-wrapper {
   position: relative;
   padding-bottom: 287px;
+  overflow: hidden;
   background-color: $light-grey;
   @media (min-width: $tablet) {
     padding-right: 20px;
@@ -128,7 +125,7 @@
   @include text(14px, 24px, normal, $main-dark);
   margin: 0;
   padding: 0;
-  width: 280px;
+  width: 260px;
   text-align: center;
   @media (min-width: $tablet) {
     width: 310px;

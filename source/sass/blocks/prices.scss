@@ -119,3 +119,9 @@
   height: 27px;
   background-image: url("../img/prices-is-available-no.svg");
 }
+
+.prices__toggles {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

@@ -20,7 +20,7 @@
   position: relative;
   width: 100%;
   @media (min-width: $desktop) {
-    width: 940px;
+    width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
   }
