@@ -8,14 +8,11 @@
     flex-direction: row;
     justify-content: flex-end;
     column-gap: 20px;
-    width: 940px;
   }
 }
 
 .site-list--menu-open {
-  @media (max-width: $desktop - 1px) {
-    display: block;
-  }
+  display: block;
 }
 
 .site-list__item {
@@ -32,7 +29,7 @@
   @media (min-width: $desktop) {
     @include text(18px, 18px, normal, $white);
     padding-top: 0;
-    padding-bottom: 28px;
+    padding-bottom: 0;
     text-transform: none;
     background: none;
     border: none;

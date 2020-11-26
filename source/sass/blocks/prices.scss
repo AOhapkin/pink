@@ -70,6 +70,7 @@
   @media (min-width: $tablet) {
     @include text(14px, 30px, normal, $main-dark);
     display: table-cell;
+    width: max-content;
   }
 }
 

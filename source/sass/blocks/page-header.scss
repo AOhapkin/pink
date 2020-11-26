@@ -11,15 +11,17 @@
 .page-header__top {
   background-color: $black-30;
   padding-top: 20px;
+  padding-bottom: 10px;
   @media (min-width: $desktop) {
+    // display: flex;
     padding-top: 28px;
+    padding-bottom: 20px;
   }
 }
 
-.page-header__logo-wrapper {
-  position: relative;
-  width: 100%;
+.page-header__top-wrapper {
   @media (min-width: $desktop) {
+    display: flex;
     width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
@@ -27,10 +29,23 @@
 }
 
 .page-header__logo {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  display: block;
+  display: flex;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
+.page-header__toggle {
+  margin-left: auto;
+  padding: 0;
+  background: none;
+  border: none;
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .page-header__bottom {
