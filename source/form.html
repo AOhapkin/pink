@@ -53,9 +53,7 @@
         <h2 class="visually-hidden">Форма заявки для участия в конкурсе</h2>
         <form class="application__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
           <fieldset class="application__fieldset application__fieldset--full-name">
-            <legend class="application__legend application__legend--full-name visually-hidden">
-              <span class="application__legend-wrapper">ФИО участника</span>
-            </legend>
+            <legend class="application__legend application__legend--full-name visually-hidden">ФИО участника</legend>
             <label class="application__label application__label--text-input application__label--full-name">
               <span class="application__label-info">Фамилия:</span>
               <input class="application__text-input" type="text" name="surname-name" placeholder="Укажите фамилию *">
@@ -70,9 +68,7 @@
             </label>
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--achievements">
-            <legend class="application__legend application__legend--achievements">
-              <span class="application__legend-wrapper">Ваши безбашенные достижения в путешествии</span>
-            </legend>
+            <legend class="application__legend application__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
             <label class="application__label application__label--checkbox">
               <input type="checkbox" name="selfie-with-a-shark" checked>
               <span class="application__label-info application__label-info--checkbox">Сделал селфи с акулой</span>
@@ -99,22 +95,18 @@
             </label>
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--contacts">
-            <legend class="application__legend application__legend--contacts">
-              <span class="application__legend-wrapper">Контактная информация</span>
-            </legend>
-            <label class="application__label application__label--text-input">
+            <legend class="application__legend application__legend--contacts">Контактная информация</legend>
+            <label class="application__label application__label--text-input application__label--contacts">
               <span class="application__label-info">Номер телефона:</span>
               <input class="application__text-input" type="tel" name="phone" placeholder="Номер, пожалуйста" maxlength="10">
             </label>
-            <label class="application__label application__label--text-input">
+            <label class="application__label application__label--text-input application__label--contacts">
               <span class="application__label-info">Адрес почты</span>
               <input class="application__text-input" type="email" name="email" placeholder="Введите почту *">
             </label>
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--app">
-            <legend class="application__legend application__legend--app">
-              <span class="application__legend-wrapper">С каким приложением путешествовали?</span>
-            </legend>
+            <legend class="application__legend application__legend--app">С каким приложением путешествовали?</legend>
             <label class="application__label application__label--radio" for="ios-app">
               <input type="radio" name="mobile-app" id="ios-app" checked>
               <span class="application__label-info application__label-info--radio">Pink для iOS</span>
@@ -129,11 +121,9 @@
             </label>
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--emotion">
-            <legend class="application__legend application__legend--emotion">
-              <span class="application__legend-wrapper">Опишите свои эмоции</span>
-            </legend>
+            <legend class="application__legend application__legend--emotion">Опишите свои эмоции</legend>
             <label class="application__label application__label--text-input visually-hidden" for="emotion">Поле для описания эмоций</label>
-            <textarea class="application__text-input" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="application__text-input application__textarea" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="application__form-bottom">
             <input class="application__button" type="submit" value="Отправить форму">

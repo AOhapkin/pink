@@ -14,6 +14,8 @@
 }
 
 .application__text--intro {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet) {
     @include text(18px, 30px, normal, $main-dark);
     width: 490px;
@@ -78,7 +80,7 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 44px;
   padding-left: 20px;
@@ -153,30 +155,24 @@
 
 .application__legend {
   @include text(14px, 18px, normal, $main-pink);
-  float: left;
   width: 220px;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: $mobile-only) {
+    display: block;
+    padding-top: 50px;
+  }
 
   @media (min-width: $tablet) {
-    float: none;
     width: max-content;
     margin: 0;
-  }
-}
-
-.application__legend-wrapper {
-  @media (min-width: $tablet) {
-    width: 100%;
     padding-right: 25px;
     padding-left: 25px;
   }
-}
-
-.application__fieldset:nth-of-type(2n) .application__legend {
-  display: block;
 }
 
 .application__label {
@@ -190,6 +186,15 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+  }
+}
+
+.application__label--contacts {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 5px;
   }
 }
 
@@ -221,6 +226,10 @@
 .application__text-input::placeholder {
   @include text(18px, 30px, normal, $main-dark);
   opacity: 1;
+}
+
+.application__textarea {
+  resize: none;
 }
 
 .application__form-bottom {
