@@ -55,14 +55,26 @@
   padding-bottom: 30px;
 
   @media (min-width: $tablet) {
+    gap: 70px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .application__fieldset {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
@@ -73,8 +85,10 @@
   border: none;
 
   @media (min-width: $tablet) {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid $input-border-grey;
+    border-radius: 1px;
   }
 }
 
@@ -86,15 +100,79 @@
   }
 }
 
+.application__fieldset--full-name {
+  order: -10;
+  gap: 29px;
+
+  @media (min-width: $tablet) {
+    gap: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
+}
+
+.application__fieldset--app {
+  @media (min-width: $tablet) {
+    order: -9;
+  }
+}
+
+.application__fieldset--achievements {
+  @media (min-width: $tablet) {
+    order: -7;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.application__fieldset--contacts {
+  @media (min-width: $tablet) {
+    order: -8;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.application__fieldset--emotion {
+  @media (min-width: $tablet) {
+    order: -6;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
 .application__legend {
   @include text(14px, 18px, normal, $main-pink);
-  display: none;
-  width: 220px;
   float: left;
+  width: 220px;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    float: none;
+    width: max-content;
+    margin: 0;
+  }
+}
+
+.application__legend-wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 .application__fieldset:nth-of-type(2n) .application__legend {
@@ -104,7 +182,6 @@
 .application__label {
   @include text(18px, 30px, normal, $main-dark);
   width: 100%;
-  margin-bottom: 29px;
 }
 
 .application__label--full-name {
@@ -156,6 +233,11 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 
