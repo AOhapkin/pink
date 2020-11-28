@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
   gap: 35px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .switcher__button {

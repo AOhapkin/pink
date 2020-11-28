@@ -39,44 +39,41 @@
       </div>
       <div class="page-header__bottom">
         <div class="page-header__bottom-wrapper">
-          <p class="page-header__slogan">Фотографии пользователей</p>
+          <p class="page-header__slogan page-header__slogan--catalog">Фотографии пользователей</p>
         </div>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Сайт мобильного приложения Пинк</h1>
       <section class="promo">
+        <h1 class="visually-hidden">Сайт мобильного приложения Пинк</h1>
         <div class="promo__wrapper">
-          <div class="promo__header">
-            <h2 class="promo__slogan">Фотографии пользователей</h2>
-          </div>
+          <p class="promo__slogan">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            <span class="promo__slogan-invite">Видите, как не хватает ваших?</span>
+          </p>
         </div>
       </section>
       <section class="user-photos">
-      <h2 class="visually-hidden">Раздел с фотографиями</h2>
-        <div class="user-photos__wrapper">
-          <div class="user-photos__header">
-            <p class="user-photos__slogan">Взгляните на фотографии, которые выкладывают пользователи!</p>
-            <p class="user-photos__slogan">Видите, как не хватает ваших?</p>
-          </div>
-          <ul class="user-photos__list">
-            <li class="user-photos__item user-photos__item--best-photo">
-              <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фотография от пользователя">
-                <span class="user-photos__marker">Панорама дня</span>
-              </a>
-              <div class="user-photos__author-info">
-                <blockquote class="user-photos__blockquote">
-                  <cite class="user-photos__autor-name">Анна</cite>
-                  <time class="user-photos__time">(5 минут назад)</time>
-                  <p class="user-photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">215</span></p>
-                </div>
+        <h2 class="visually-hidden">Раздел с фотографиями</h2>
+        <article class="user-photos__best-photo best-photo">
+          <a class="best-photo__link" href="">
+            <img class="best-photo__image" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фотография с панорамой">
+          </a>
+          <div class="best-photo__author-info">
+            <span class="best-photo__marker">Панорама дня</span>
+            <blockquote class="best-photo__blockquote">
+              <cite class="best-photo__autor-name">Анна</cite>
+              <time class="best-photo__time">(5 минут назад)</time>
+              <p class="best-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="best-photo__likes likes">
+                <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                <p class="likes__text">Нравится: <span class="likes__number">215</span></p>
               </div>
-            </li>
+            </blockquote>
+          </div>
+        </article>
+        <div class="user-photos__wrapper">
+          <ul class="user-photos__list">
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
                 <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
@@ -86,11 +83,11 @@
                   <cite class="user-photos__autor-name">Левон</cite>
                   <time class="user-photos__time">(5 часов назад)</time>
                   <p class="user-photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <div class="likes">
+                    <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                    <p class="likes__text">Нравится: <span class="likes__number">356</span></p>
+                  </div>
                 </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">356</span></p>
-                </div>
               </div>
             </li>
             <li class="user-photos__item">
@@ -102,11 +99,11 @@
                   <cite class="user-photos__autor-name">Антон</cite>
                   <time class="user-photos__time">(12 часов назад)</time>
                   <p class="user-photos__text">Соседи будут рады!</p>
+                  <div class="likes">
+                    <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                    <p class="likes__text">Нравится: <span class="likes__number">666</span></p>
+                  </div>
                 </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">666</span></p>
-                </div>
               </div>
             </li>
             <li class="user-photos__item">
@@ -118,11 +115,11 @@
                   <cite class="user-photos__autor-name">Борис</cite>
                   <time class="user-photos__time">(20 часов назад)</time>
                   <p class="user-photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <div class="likes">
+                    <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                    <p class="likes__text">Нравится: <span class="likes__number">215</span></p>
+                  </div>
                 </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">215</span></p>
-                </div>
               </div>
             </li>
             <li class="user-photos__item">
@@ -134,11 +131,11 @@
                   <cite class="user-photos__autor-name">Сергей</cite>
                   <time class="user-photos__time">(25 часов назад)</time>
                   <p class="user-photos__text">Самая кубанская в мире!</p>
+                  <div class="likes">
+                    <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                    <p class="likes__text">Нравится: <span class="likes__number">4</span></p>
+                  </div>
                 </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">4</span></p>
-                </div>
               </div>
             </li>
             <li class="user-photos__item">
@@ -150,11 +147,11 @@
                   <cite class="user-photos__autor-name">Максим</cite>
                   <time class="user-photos__time">(40 часов назад)</time>
                   <p class="user-photos__text">Где снег-то?</p>
+                  <div class="likes">
+                    <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                    <p class="likes__text">Нравится: <span class="likes__number">215</span></p>
+                  </div>
                 </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">215</span></p>
-                </div>
               </div>
             </li>
             <li class="user-photos__item">
@@ -166,11 +163,11 @@
                   <cite class="user-photos__autor-name">Надежда</cite>
                   <time class="user-photos__time">(45 часов назад)</time>
                   <p class="user-photos__text">Всем GM и взаимные лайки!</p>
+                  <div class="likes">
+                    <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
+                    <p class="likes__text">Нравится: <span class="likes__number">2560</span></p>
+                  </div>
                 </blockquote>
-                <div class="likes">
-                  <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
-                  <p class="likes__text">Нравится: <span class="likes__number">2560</span></p>
-                </div>
               </div>
             </li>
           </ul>
@@ -197,7 +194,7 @@
                 </button>
               </div>
               <ul class="photo-editor__list">
-                <li class="photo-editor__item">
+                <li class="photo-editor__item photo-editor__item--current-item">
                   <div class="range-filter">
                     <div class="range-filter__control">
                       <div class="range-filter__scale">
@@ -231,10 +228,10 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="photo-editor__buttons">
-              <input class="photo-editor__button photo-editor__button--upload" type="submit" value="Запостить">
-              <input class="photo-editor__button photo-editor__button--cancel" type="reset" value="Отмена">
+              <div class="photo-editor__buttons">
+                <input class="photo-editor__button photo-editor__button--upload" type="submit" value="Запостить">
+                <input class="photo-editor__button photo-editor__button--cancel" type="reset" value="Отмена">
+              </div>
             </div>
           </form>
         </div>
