@@ -53,8 +53,9 @@
 .page-header__bottom {
   display: grid;
   justify-items: center;
-  padding-top: 29px;
+}
 
+.page-header__bottom--index-page {
   @media (min-width: $tablet) {
     width: 300px;
     margin-left: 20px;
@@ -72,6 +73,20 @@
   display: grid;
   justify-items: center;
   width: 100%;
+  padding-top: 29px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 74px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 70px;
+  }
+}
+
+.page-header__bottom-wrapper--index-page {
+  padding-bottom: 0;
 
   @media (min-width: $tablet) {
     width: 300px;
@@ -89,12 +104,24 @@
   @include text(24px, 29px, 300, $white);
   width: 300px;
   margin: 0;
-  margin-bottom: 320px;
   padding: 0;
   text-align: center;
 
   @media (min-width: $tablet) {
-    @include text(40px, 1.2, 300, $white);
+    @include text(50px, 68px, 300, $white);
+    width: 550px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 750px;
+  }
+}
+
+.page-header__slogan--index-page {
+  margin-bottom: 320px;
+
+  @media (min-width: $tablet) {
+    @include text(40px, 48px, 300, $white);
     width: 240px;
     margin-bottom: 39px;
   }

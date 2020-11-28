@@ -6,14 +6,42 @@
 
 .application__text {
   @include text(14px, 30px, normal, $main-dark);
-  display: block;
   margin: 0;
+  padding: 0;
   padding-right: 18px;
   padding-left: 18px;
   text-align: center;
 }
 
+.application__text--intro {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    @include text(18px, 30px, normal, $main-dark);
+    width: 490px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 760px;
+  }
+}
+
+.application__text--invitation-part {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+}
+
 .application__text--required {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -27,44 +55,147 @@
   align-items: center;
   width: 100%;
   padding-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    gap: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .application__fieldset {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 44px;
   padding-left: 20px;
   border: none;
+
+  @media (min-width: $tablet) {
+    padding-right: 60px;
+    padding-left: 60px;
+    border: 2px solid $input-border-grey;
+    border-radius: 1px;
+  }
 }
 
 .application__fieldset:nth-of-type(2n) {
   background-color: $light-grey;
+
+  @media (min-width: $tablet) {
+    background: none;
+  }
+}
+
+.application__fieldset--full-name {
+  order: -10;
+  gap: 29px;
+
+  @media (min-width: $tablet) {
+    gap: 40px;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+  }
+}
+
+.application__fieldset--app {
+  @media (min-width: $tablet) {
+    order: -9;
+  }
+}
+
+.application__fieldset--achievements {
+  @media (min-width: $tablet) {
+    order: -7;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.application__fieldset--contacts {
+  @media (min-width: $tablet) {
+    order: -8;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.application__fieldset--emotion {
+  @media (min-width: $tablet) {
+    order: -6;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 .application__legend {
   @include text(14px, 18px, normal, $main-pink);
-  display: none;
   width: 220px;
-  float: left;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   text-align: center;
-}
+  text-transform: uppercase;
 
-.application__fieldset:nth-of-type(2n) .application__legend {
-  display: block;
+  @media (max-width: $mobile-only) {
+    display: block;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $tablet) {
+    width: max-content;
+    margin: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 
 .application__label {
   @include text(18px, 30px, normal, $main-dark);
   width: 100%;
-  margin-bottom: 29px;
+}
+
+.application__label--full-name {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.application__label--contacts {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 5px;
+  }
 }
 
 .application__label-info {
@@ -97,10 +228,31 @@
   opacity: 1;
 }
 
+.application__textarea {
+  resize: none;
+}
+
+.application__form-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
 .application__button {
   @include text(18px, 30px, bold, $white);
   width: 280px;
-  margin-bottom: 30px;
   padding: 15px;
   text-transform: uppercase;
   background: $submit-green;
