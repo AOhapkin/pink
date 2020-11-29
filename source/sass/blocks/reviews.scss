@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 38px;
 
   @media (min-width: $desktop) {
     padding-top: 120px;
@@ -26,7 +26,7 @@
 
 .reviews__list {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 31px;
   padding: 0;
   padding-right: 20px;
   padding-left: 20px;
@@ -38,7 +38,8 @@
   flex-direction: column-reverse;
   row-gap: 13px;
   align-items: center;
-  padding-top: 27px;
+  margin: 0;
+  padding-top: 40px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
@@ -49,6 +50,7 @@
   @include text(14px, 30px, normal, $main-dark);
   margin: 0;
   padding: 0;
+  width: 100%;
   text-align: center;
 
   @media (min-width: $tablet) {

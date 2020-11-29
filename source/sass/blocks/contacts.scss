@@ -1,10 +1,10 @@
 .contacts__wrapper {
   display: grid;
   justify-items: center;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-right: 20px;
-  padding-bottom: 41px;
-  padding-left: 20px;
+  padding-bottom: 35px;
+  padding-left: 19px;
 
   @media (min-width: $tablet) {
     padding-top: 55px;
@@ -28,7 +28,7 @@
   grid-column-end: -1;
   width: 230px;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   padding: 0;
   text-align: center;
 
@@ -47,7 +47,7 @@
 
 .contacts__list {
   display: grid;
-  row-gap: 35px;
+  row-gap: 17px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -67,7 +67,6 @@
 .contacts__item {
   display: grid;
   justify-items: center;
-  row-gap: 13px;
 
   @media (min-width: $tablet) {
     row-gap: 17px;
@@ -79,6 +78,10 @@
 }
 
 .contacts__item:nth-child(3) {
+  @media (max-width: $mobile-only) {
+    padding-top: 5px;
+  }
+
   @media (min-width: $tablet) {
     grid-column-start: 1;
     grid-column-end: -1;

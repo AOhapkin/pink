@@ -15,22 +15,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  gap: 35px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   padding: 0;
   padding-top: 28px;
   padding-right: 20px;
   padding-left: 20px;
-  width: 100%;
+  max-width: 350px;
   list-style: none;
 
   @media (min-width: $tablet) {
     width: 300px;
   }
-}
-
-.download__item:not(:first-child):not(:last-child) {
-  margin-right: 35px;
 }
 
 .download__item--main-item {
@@ -47,7 +44,6 @@
 }
 
 .download__link--main-link {
-  margin-bottom: 36px;
   padding-top: 16px;
   padding-bottom: 15px;
   border: 3px solid $white;

@@ -1,4 +1,24 @@
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map::before {
+  position: absolute;
+  top: -1;
+  left: 0;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-image: url(../img/map-triangle-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 .map__iframe {
+  z-index: 0;
   width: 100%;
   height: 200px;
   margin: 0;

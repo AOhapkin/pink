@@ -1,21 +1,32 @@
-.prices {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.prices__wrapper {
+  position: relative;
+  padding-top: 98px;
+  padding-bottom: 46px;
   background-color: $light-grey;
 }
 
-.prices__wrapper {
+.prices__wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  border-right: 100vw solid transparent;
+  border-top: 6vw solid $white;
+}
+
+.prices__table-wrapper {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 280px;
+  width: 281px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
 
   @media (min-width: $tablet) {
     width: 620px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop) {
@@ -28,7 +39,8 @@
 .prices__table {
   @include text(14px, 30px, normal, $main-dark);
   width: 840px;
-  margin-bottom: 30px;
+  margin-bottom: 41px;
+  transform: translateX(-279px);
   border-collapse: collapse;
 
   @media (min-width: $tablet) {
@@ -37,11 +49,19 @@
 }
 
 .prices__table-column-head {
-  padding-top: 19px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 12px;
+  padding-bottom: 30px;
   color: $white;
   background-color: $main-dark;
   border: 2px solid $main-dark;
   border-radius: 1px 0 0 0;
+
+  @media (max-width: $mobile-only) {
+    border-bottom: none;
+    border-color: $light-grey;
+  }
 }
 
 .prices__table-column-head--empty {
@@ -58,10 +78,29 @@
   @include text(16px, 30px, bold, $white);
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, bold, $white);
+  }
+}
+
+.prices__bestseller {
+  @include text(14px, 25px, normal, $white);
+  position: absolute;
+  z-index: 100
+;
+  top: 18px;
+  left: -75px;
+  transform: rotate(-45deg);
+  display: block;
+  width: 200px;
+  text-transform: uppercase;
+  background-color: $main-pink;
 }
 
 .prices__sum {
-  @include text(18px, 30px, 300, $white);
+  @include text(18px, 26px, 300, $white);
   margin: 0;
   padding: 0;
 }
@@ -82,7 +121,8 @@
 .prices__cell {
   position: relative;
   width: 280px;
-  height: 59px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 2px solid $input-border-grey;
   border-radius: 1px 0 0 0;
   border-top: none;

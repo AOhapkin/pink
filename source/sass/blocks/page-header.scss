@@ -10,8 +10,8 @@
 
 .page-header__top {
   background-color: $black-30;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 21px;
+  padding-bottom: 12px;
 
   @media (min-width: $desktop) {
     padding-top: 28px;
@@ -39,7 +39,14 @@
   }
 }
 
+.page-header__logo-link {
+  display: block;
+  height: min-content;
+}
+
 .page-header__toggle {
+  display: block;
+  height: min-content;
   margin-left: auto;
   padding: 0;
   background: none;
@@ -73,7 +80,7 @@
   display: grid;
   justify-items: center;
   width: 100%;
-  padding-top: 29px;
+  padding-top: 23px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet) {
@@ -118,7 +125,7 @@
 }
 
 .page-header__slogan--index-page {
-  margin-bottom: 320px;
+  margin-bottom: 315px;
 
   @media (min-width: $tablet) {
     @include text(40px, 48px, 300, $white);

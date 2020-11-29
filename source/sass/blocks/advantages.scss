@@ -3,6 +3,7 @@
   row-gap: 30px;
   justify-items: center;
   padding-top: 41px;
+  padding-bottom: 30px;
 
   @media (min-width: $tablet) {
     row-gap: 0;
@@ -57,7 +58,7 @@
   content: "";
   width: 100%;
   border-right: 100vw solid transparent;
-  border-top: 8vw solid $white;
+  border-top: 10vw solid $white;
 }
 
 .advantages__list-wrapper::after {
