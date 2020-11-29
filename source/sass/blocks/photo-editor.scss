@@ -1,11 +1,27 @@
 .photo-editor__wrapper {
-  padding: 20px 20px 40px 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   background-color: $light-grey;
+
+  @media (min-width: $tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .photo-editor__form {
   display: grid;
   justify-items: center;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .photo-editor__image {
@@ -14,29 +30,68 @@
 }
 
 .photo-editor__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
   padding-top: 40px;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .photo-editor__list {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.photo-editor__item {
+  display: none;
+  height: 40px;
+  border-bottom: 1px solid $main-dark-10;
+  background-color: plum;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.photo-editor__item--current-item {
+  display: block;
+}
+
 .photo-editor__buttons {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   width: 100%;
   padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .photo-editor__button {
   @include text(18px, 18px, bold, $main-dark);
   width: 100%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 3px solid $main-dark;
   border-radius: 30px;
+
+  @media (min-width: $desktop) {
+    width: 170px;
+  }
 }
 
 .photo-editor__button--upload {

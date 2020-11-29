@@ -126,3 +126,9 @@
     margin-bottom: 39px;
   }
 }
+
+.page-header__slogan--catalog {
+  @media (min-width: $desktop) {
+    width: 400px;
+  }
+}

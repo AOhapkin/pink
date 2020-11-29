@@ -1,0 +1,74 @@
+.best-photo__link {
+  display: block;
+}
+
+.best-photo__image {
+  width: 100%;
+}
+
+.best-photo__author-info {
+  position: relative;
+  display: grid;
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $desktop) {
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+.best-photo__marker {
+  @include text(12px, 24px, bold, $white);
+  position: absolute;
+  top: -100px;
+  right: 20px;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: $main-pink;
+
+  @media (min-width: $desktop) {
+    // top: 50px;
+    right: 0;
+  }
+}
+
+.best-photo__blockquote {
+  margin: 0;
+  padding: 25px 17px;
+  background-color: $light-grey;
+
+  @media (min-width: $desktop) {
+    padding: 30px;
+  }
+}
+
+.best-photo__autor-name {
+  @include text(14px, 24px, bold, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.best-photo__time {
+  @include text(12px, 24px, 300, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.best-photo__text {
+  @include text(14px, 24px, normal, $main-dark);
+  margin: 0;
+  padding: 0;
+}
+
+.best-photo__likes {
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
