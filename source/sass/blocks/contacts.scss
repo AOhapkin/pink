@@ -7,8 +7,8 @@
   padding-left: 19px;
 
   @media (min-width: $tablet) {
-    padding-top: 55px;
-    padding-bottom: 30px;
+    padding-top: 45px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop) {
@@ -35,7 +35,7 @@
   @media (min-width: $tablet) {
     @include text(40px, 54px, 300, $main-dark);
     width: 370px;
-    margin-bottom: 51px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop) {
@@ -56,7 +56,8 @@
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    row-gap: 55px;
+    row-gap: 41px;
+    column-gap: 19px;
   }
 
   @media (min-width: $desktop) {
@@ -69,7 +70,7 @@
   justify-items: center;
 
   @media (min-width: $tablet) {
-    row-gap: 17px;
+    row-gap: 5px;
   }
 
   @media (min-width: $desktop) {

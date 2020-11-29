@@ -13,9 +13,13 @@
   padding-top: 21px;
   padding-bottom: 12px;
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     padding-top: 28px;
-    padding-bottom: 20px;
+    padding-bottom: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 51px;
   }
 }
 
@@ -65,12 +69,12 @@
 .page-header__bottom--index-page {
   @media (min-width: $tablet) {
     width: 300px;
-    margin-left: 20px;
+    margin-left: 14px;
   }
 
   @media (min-width: $desktop) {
     justify-items: start;
-    width: $content-desktop;
+    width: 950px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -97,13 +101,13 @@
 
   @media (min-width: $tablet) {
     width: 300px;
-    padding-top: 102px;
-    padding-bottom: 119px;
+    padding-top: 94px;
+    padding-bottom: 83px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 114px;
-    padding-bottom: 130px;
+    padding-top: 97px;
+    padding-bottom: 96px;
   }
 }
 
@@ -130,7 +134,12 @@
   @media (min-width: $tablet) {
     @include text(40px, 48px, 300, $white);
     width: 240px;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include text(50px, 68px, 300, $white);
+    margin-bottom: 35px;
   }
 }
 
