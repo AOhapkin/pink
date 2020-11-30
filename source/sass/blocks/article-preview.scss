@@ -69,6 +69,12 @@
   }
 }
 
+.article-preview__title-br {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
 .article-preview__description {
   @include text(14px, 24px, normal, $main-dark);
   margin: 0;

@@ -1,11 +1,15 @@
 .social-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  // gap: 5px;
   width: 190px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop) {
+    width: 180px;
+    padding-top: 5px;
+  }
 }
 
 .social-item {

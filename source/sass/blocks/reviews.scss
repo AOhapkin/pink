@@ -9,6 +9,11 @@
   }
 
   @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 164px;
   }
 }
@@ -39,6 +44,11 @@
   @media (min-width: $tablet) {
     margin-bottom: 36px;
   }
+
+  @media (min-width: $desktop) {
+    width: 730px;
+    padding-top: 20px;
+  }
 }
 
 .reviews__blockquote {
@@ -51,7 +61,11 @@
 
   @media (min-width: $tablet) {
     flex-direction: column;
-    padding-top: 21px;
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 
@@ -66,6 +80,11 @@
     @include text(18px, 30px, normal, $main-dark);
     padding-bottom: 22px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 23px;
+    padding-bottom: 0;
+  }
 }
 
 .reviews__author-name {
@@ -75,6 +94,12 @@
 
   @media (min-width: $tablet) {
     @include text(20px, 30px, bold, $black);
+  }
+
+  @media (min-width: $desktop) {
+    @include text(24px, 30px, bold, $black);
+    margin-bottom: 2px;
+    text-align: center;
   }
 }
 
@@ -87,10 +112,36 @@
     @include text(14px, 30px, normal, $main-dark);
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, normal, $main-dark);
+  }
 }
 
 .reviews__toggles {
   @media (min-width: $desktop) {
     display: none;
   }
+}
+
+.reviews__button {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 0;
+  width: 22px;
+  height: 41px;
+  background-image: url("../img/reviews-button-next.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin-top: 49px;
+  }
+}
+
+.reviews__button--prev {
+  order: -1;
+  background-image: url("../img/reviews-button-prev.svg");
 }
