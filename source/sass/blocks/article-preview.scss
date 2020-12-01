@@ -75,6 +75,14 @@
   }
 }
 
+.article-preview__title-br--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
+}
+
 .article-preview__description {
   @include text(14px, 24px, normal, $main-dark);
   margin: 0;
@@ -86,7 +94,7 @@
 
   @media (min-width: $desktop) {
     @include text(18px, 30px, normal, $main-dark);
-    width: 521px;
+    width: 530px;
     margin-bottom: 8px;
   }
 }
@@ -96,7 +104,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     @include text(18px, 30px, normal, $main-pink);
   }
 }

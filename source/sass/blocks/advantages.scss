@@ -166,3 +166,15 @@
     text-align: center;
   }
 }
+
+.advantages__description-br {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
