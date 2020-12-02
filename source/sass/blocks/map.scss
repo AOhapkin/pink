@@ -1,11 +1,10 @@
 .map {
   position: relative;
-  overflow: hidden;
 }
 
 .map::before {
   position: absolute;
-  top: 0;
+  top: -1;
   left: 0;
   z-index: 10;
   content: "";
@@ -13,8 +12,7 @@
   height: 33px;
   background-image: url("../img/map-triangle-top.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  background-size: cover;
 }
 
 .map__iframe {

@@ -79,6 +79,15 @@
   text-align: center;
 }
 
+.download__link--main-link:hover {
+  color: $main-pink;
+  background-color: $white;
+}
+
+.download__link--main-link:active {
+  color: $main-pink-30;
+}
+
 .download__link--ios {
   width: 47px;
   height: 56px;

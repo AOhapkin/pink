@@ -21,8 +21,24 @@
   opacity: 0.3;
 }
 
+.slider__toggle:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle:active {
+  opacity: 0.1;
+}
+
 .slider__toggle--current {
   border: 3px solid $main-dark;
   background-color: $white;
+  opacity: 1;
+}
+
+.slider__toggle--current:hover {
+  opacity: 1;
+}
+
+.slider__toggle--current:active {
   opacity: 1;
 }

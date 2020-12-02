@@ -52,12 +52,10 @@
   width: 840px;
   margin-bottom: 41px;
   border-collapse: collapse;
-
-  @media (max-width: $mobile-only) {
-    transform: translateX(-260px);
-  }
+  transform: translateX(-260px);
 
   @media (min-width: $tablet) {
+    transform: none;
     width: 100%;
   }
 }

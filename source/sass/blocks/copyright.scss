@@ -19,3 +19,11 @@
     @include text(18px, 18px, normal, $main-dark);
   }
 }
+
+.copyright__link:hover path {
+  fill: $main-dark;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

@@ -27,3 +27,11 @@
   border: 3px solid $main-dark-10;
   border-radius: 50%;
 }
+
+.social-link:hover {
+  border: 3px solid $main-dark;
+}
+
+.social-link:active {
+  opacity: 0.3;
+}

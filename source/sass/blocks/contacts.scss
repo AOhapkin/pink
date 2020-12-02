@@ -119,3 +119,21 @@
   text-align: center;
   text-decoration: none;
 }
+
+.contacts__link {
+  @include text(24px, 33px, 300, $main-pink);
+  width: 245px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  color: $main-dark;
+}
+
+.contacts__link:active {
+  color: $main-dark;
+  opacity: 0.3;
+}
