@@ -1,21 +1,43 @@
-.prices {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: $light-grey;
-}
-
 .prices__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 280px;
+  padding-top: 98px;
+  padding-bottom: 46px;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet) {
+    padding-top: 97px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 140px;
+    padding-bottom: 56px;
+  }
+}
+
+.prices__wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  border-right: 100vw solid transparent;
+  border-top: 6vw solid $white;
+}
+
+.prices__table-wrapper {
+  width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  overflow: hidden;
 
   @media (min-width: $tablet) {
     width: 620px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop) {
@@ -28,20 +50,75 @@
 .prices__table {
   @include text(14px, 30px, normal, $main-dark);
   width: 840px;
-  margin-bottom: 30px;
+  margin-bottom: 41px;
   border-collapse: collapse;
+  transform: translateX(-260px);
 
   @media (min-width: $tablet) {
+    transform: none;
     width: 100%;
   }
 }
 
 .prices__table-column-head {
-  padding-top: 19px;
+  padding-top: 12px;
+  padding-bottom: 30px;
   color: $white;
   background-color: $main-dark;
   border: 2px solid $main-dark;
   border-radius: 1px 0 0 0;
+
+  @media (max-width: $mobile-only) {
+    border-bottom: none;
+    border-color: $light-grey;
+  }
+
+  @media (min-width: $tablet) {
+    width: 152px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 236px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+}
+
+.prices__table-column-head:not(:last-child) {
+  @media (min-width: $tablet) {
+    border-right: 2px solid $light-grey;
+  }
+}
+
+.prices__table-column-head--bestseller {
+  position: relative;
+}
+
+.prices__table-column-head--bestseller::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -2px;
+  z-index: 10;
+  width: 74px;
+  height: 74px;
+  background-image: url("../img/table-hit-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    top: -2px;
+    left: 0;
+    width: 61px;
+    height: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .prices__table-column-head--empty {
@@ -58,12 +135,37 @@
   @include text(16px, 30px, bold, $white);
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, bold, $white);
+  }
+}
+
+.prices__bestseller {
+  @include text(14px, 25px, normal, $white);
+  position: absolute;
+  z-index: 100;
+  top: 18px;
+  left: 13px;
+  transform: rotate(-45deg);
+  display: block;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    top: 17px;
+    left: 17px;
+  }
 }
 
 .prices__sum {
-  @include text(18px, 30px, 300, $white);
+  @include text(18px, 26px, 300, $white);
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop) {
+    @include text(24px, 30px, 300, $white);
+  }
 }
 
 .prices__row-name {
@@ -75,18 +177,41 @@
   @media (min-width: $tablet) {
     @include text(14px, 30px, normal, $main-dark);
     display: table-cell;
-    width: max-content;
+    min-width: 153px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, normal, $main-dark);
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
 .prices__cell {
   position: relative;
-  width: 280px;
-  height: 59px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 2px solid $input-border-grey;
   border-radius: 1px 0 0 0;
   border-top: none;
   background-color: $white;
+
+  @media (min-width: $mobile-only) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
 
 .prices__cell-wrapper {

@@ -10,12 +10,17 @@
 
 .page-header__top {
   background-color: $black-30;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 21px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    padding-top: 28px;
+    padding-bottom: 34px;
+    height: 110px;
+  }
 
   @media (min-width: $desktop) {
-    padding-top: 28px;
-    padding-bottom: 20px;
+    padding-top: 45px;
   }
 }
 
@@ -28,7 +33,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo-wrapper {
   display: flex;
   width: 100%;
   padding-right: 20px;
@@ -39,7 +44,17 @@
   }
 }
 
+.page-header__logo-link:hover path {
+  fill: $main-pink;
+}
+
+.page-header__logo-link:active path {
+  opacity: 0.3;
+}
+
 .page-header__toggle {
+  display: block;
+  height: min-content;
   margin-left: auto;
   padding: 0;
   background: none;
@@ -50,6 +65,14 @@
   }
 }
 
+.page-header__toggle:hover path {
+  fill: $main-pink;
+}
+
+.page-header__toggle:active path {
+  opacity: 0.3;
+}
+
 .page-header__bottom {
   display: grid;
   justify-items: center;
@@ -58,12 +81,12 @@
 .page-header__bottom--index-page {
   @media (min-width: $tablet) {
     width: 300px;
-    margin-left: 20px;
+    margin-left: 14px;
   }
 
   @media (min-width: $desktop) {
     justify-items: start;
-    width: $content-desktop;
+    width: 950px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -73,7 +96,7 @@
   display: grid;
   justify-items: center;
   width: 100%;
-  padding-top: 29px;
+  padding-top: 23px;
   padding-bottom: 30px;
 
   @media (min-width: $tablet) {
@@ -90,13 +113,13 @@
 
   @media (min-width: $tablet) {
     width: 300px;
-    padding-top: 102px;
-    padding-bottom: 119px;
+    padding-top: 94px;
+    padding-bottom: 83px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 114px;
-    padding-bottom: 130px;
+    padding-top: 97px;
+    padding-bottom: 98px;
   }
 }
 
@@ -118,12 +141,17 @@
 }
 
 .page-header__slogan--index-page {
-  margin-bottom: 320px;
+  margin-bottom: 315px;
 
   @media (min-width: $tablet) {
     @include text(40px, 48px, 300, $white);
     width: 240px;
-    margin-bottom: 39px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    @include text(50px, 68px, 300, $white);
+    margin-bottom: 37px;
   }
 }
 

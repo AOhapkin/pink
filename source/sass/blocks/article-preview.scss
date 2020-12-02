@@ -20,13 +20,19 @@
   padding-right: 20px;
   padding-bottom: 102px;
 
+  @media (min-width: $tablet) {
+    gap: 10px;
+    padding-top: 95px;
+  }
+
   @media (min-width: $desktop) {
-    row-gap: 37px;
+    row-gap: 23px;
     width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 105px;
+    padding-bottom: 110px;
     padding-left: 370px;
-    padding-bottom: 120px;
   }
 }
 
@@ -34,7 +40,7 @@
   position: absolute;
   content: "";
   top: 54px;
-  left: -272px;
+  left: -310px;
   width: 238px;
   height: 276px;
   background-image: url("../img/article-preview-icon.svg");
@@ -42,7 +48,10 @@
   background-size: cover;
 
   @media (min-width: $desktop) {
+    top: 14px;
     left: 0;
+    width: 298px;
+    height: 345px;
   }
 }
 
@@ -50,16 +59,52 @@
   @include text(30px, 36px, bold, $black);
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    width: 168px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 368px;
+  }
+}
+
+.article-preview__title-br {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.article-preview__title-br--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
 
 .article-preview__description {
   @include text(14px, 24px, normal, $main-dark);
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, normal, $main-dark);
+    width: 530px;
+    margin-bottom: 8px;
+  }
 }
 
 .article-preview__link {
   @include text(14px, 24px, normal, $main-pink);
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, normal, $main-pink);
+  }
 }

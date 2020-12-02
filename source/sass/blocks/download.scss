@@ -15,26 +15,46 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  gap: 35px;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   padding: 0;
   padding-top: 28px;
   padding-right: 20px;
   padding-left: 20px;
-  width: 100%;
+  max-width: 350px;
   list-style: none;
 
   @media (min-width: $tablet) {
+    gap: 0;
     width: 300px;
+    margin-bottom: 14px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 28px;
   }
 }
 
-.download__item:not(:first-child):not(:last-child) {
-  margin-right: 35px;
+.download__item {
+  @media (min-width: $tablet) {
+    margin: 18px;
+    margin-top: 0;
+  }
 }
 
 .download__item--main-item {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 74px;
+  }
 }
 
 .download__link {
@@ -44,16 +64,28 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  @media (min-width: $desktop) {
+    @include text(21px, 18px, bold, $white);
+  }
 }
 
 .download__link--main-link {
-  margin-bottom: 36px;
   padding-top: 16px;
   padding-bottom: 15px;
   border: 3px solid $white;
   box-sizing: border-box;
   border-radius: 39px;
   text-align: center;
+}
+
+.download__link--main-link:hover {
+  color: $main-pink;
+  background-color: $white;
+}
+
+.download__link--main-link:active {
+  color: $main-pink-30;
 }
 
 .download__link--ios {
@@ -85,6 +117,7 @@
 
   @media (min-width: $tablet) {
     @include text(18px, 24px, 300, $white);
+    padding: 0;
     width: 310px;
   }
 }

@@ -8,7 +8,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    column-gap: 20px;
+    flex-wrap: wrap;
+    gap: 80px;
+    width: 700px;
   }
 }
 
@@ -40,6 +42,31 @@
 }
 
 .site-list__link {
+  position: relative;
   color: inherit;
   text-decoration: none;
+}
+
+.site-list__link:hover {
+  color: $main-pink;
+}
+
+.site-list__link:active {
+  opacity: 0.3;
+
+  @media (min-width: $desktop) {
+    color: $white;
+  }
+}
+
+.site-list__link--current-link::after {
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    bottom: -10px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+  }
 }

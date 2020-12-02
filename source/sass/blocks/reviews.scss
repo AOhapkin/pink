@@ -2,10 +2,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 14px;
+  }
 
   @media (min-width: $desktop) {
-    padding-top: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $content-desktop;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 164px;
   }
 }
 
@@ -13,7 +22,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     content: "";
-    top: 40px;
+    top: 72px;
     left: 50%;
     transform: translateX(-50%);
     width: 79px;
@@ -26,11 +35,20 @@
 
 .reviews__list {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 31px;
   padding: 0;
   padding-right: 20px;
   padding-left: 20px;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 730px;
+    padding-top: 20px;
+  }
 }
 
 .reviews__blockquote {
@@ -38,10 +56,16 @@
   flex-direction: column-reverse;
   row-gap: 13px;
   align-items: center;
-  padding-top: 27px;
+  margin: 0;
+  padding-top: 40px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 
@@ -49,11 +73,17 @@
   @include text(14px, 30px, normal, $main-dark);
   margin: 0;
   padding: 0;
+  width: 100%;
   text-align: center;
 
   @media (min-width: $tablet) {
     @include text(18px, 30px, normal, $main-dark);
-    padding-bottom: 51px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 23px;
+    padding-bottom: 0;
   }
 }
 
@@ -64,6 +94,12 @@
 
   @media (min-width: $tablet) {
     @include text(20px, 30px, bold, $black);
+  }
+
+  @media (min-width: $desktop) {
+    @include text(24px, 30px, bold, $black);
+    margin-bottom: 2px;
+    text-align: center;
   }
 }
 
@@ -76,10 +112,36 @@
     @include text(14px, 30px, normal, $main-dark);
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    @include text(18px, 30px, normal, $main-dark);
+  }
 }
 
 .reviews__toggles {
   @media (min-width: $desktop) {
     display: none;
   }
+}
+
+.reviews__button {
+  display: none;
+  border: none;
+  background: none;
+  font-size: 0;
+  width: 22px;
+  height: 41px;
+  background-image: url("../img/reviews-button-next.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin-top: 49px;
+  }
+}
+
+.reviews__button--prev {
+  order: -1;
+  background-image: url("../img/reviews-button-prev.svg");
 }

@@ -3,10 +3,27 @@
   flex-wrap: wrap;
   align-items: center;
   column-gap: 15px;
+  padding-top: 8px;
+
+  @media (min-width: $desktop) {
+    padding-top: 1px;
+  }
 }
 
 .copyright__text {
   @include text(14px, 18px, normal, $main-dark);
   margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop) {
+    @include text(18px, 18px, normal, $main-dark);
+  }
+}
+
+.copyright__link:hover path {
+  fill: $main-dark;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
