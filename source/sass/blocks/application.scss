@@ -54,7 +54,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet) {
     gap: 70px;
@@ -82,9 +82,7 @@
   margin: 0;
   padding: 0;
   padding-top: 5px;
-  padding-right: 20px;
   padding-bottom: 42px;
-  padding-left: 20px;
   border: none;
 
   @media (min-width: $tablet) {
@@ -103,19 +101,25 @@
   }
 }
 
-.application__fieldset--full-name {
-  order: -10;
-  gap: 16px;
+.application__fieldset:nth-of-type(2n) .application__legend {
+  background-color: $light-grey;
 
   @media (min-width: $tablet) {
-    gap: 40px;
-    padding-right: 0;
-    padding-left: 0;
+    background: none;
+  }
+}
+
+.application__fieldset--full-name {
+  order: -10;
+
+  @media (min-width: $tablet) {
     border: none;
   }
 }
 
 .application__fieldset--app {
+  padding-bottom: 46px;
+
   @media (min-width: $tablet) {
     order: -9;
   }
@@ -123,6 +127,7 @@
 
 .application__fieldset--achievements {
   padding-top: 0;
+  padding-bottom: 46px;
 
   @media (min-width: $tablet) {
     order: -7;
@@ -135,6 +140,8 @@
 }
 
 .application__fieldset--contacts {
+  padding-top: 33px;
+
   @media (min-width: $tablet) {
     order: -8;
   }
@@ -146,6 +153,8 @@
 }
 
 .application__fieldset--emotion {
+  padding-bottom: 40px;
+
   @media (min-width: $tablet) {
     order: -6;
   }
@@ -158,24 +167,34 @@
 
 .application__fieldset-list {
   display: grid;
-  row-gap: 52px;
+  row-gap: 16px;
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
+  padding-left: 20px;
   list-style: none;
+}
+
+.application__fieldset-list--checkbox {
+  row-gap: 52px;
+}
+
+.application__fieldset-list--radio {
+  row-gap: 45px;
 }
 
 .application__legend {
   @include text(14px, 18px, normal, $main-pink);
   display: block;
-  width: 220px;
   margin: 0;
   margin-bottom: 41px;
   padding: 0;
   padding-top: 39px;
+  padding-right: 40px;
+  padding-left: 40px;
   text-align: center;
   text-transform: uppercase;
-  background-color: $light-grey;
 
   @media (min-width: $tablet) {
     width: max-content;
@@ -183,6 +202,22 @@
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.application__legend--contacts {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.application__legend--app {
+  margin-bottom: 33px;
+}
+
+.application__legend--emotion {
+  margin-bottom: 10px;
 }
 
 .application__label {
@@ -244,12 +279,48 @@
   background-size: cover;
 }
 
-.application__label-info {
-  padding-left: 23px;
+.application__checkbox:focus + .application__label--checkbox {
+  outline: 1px solid $black;
 }
 
-.application__label-info--radio {
-  padding-left: 55px;
+.application__label--radio {
+  position: relative;
+  padding-left: 70px;
+}
+
+.application__label--radio::before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $input-border-grey;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+.application__label--radio:hover::before {
+  border-color: $main-dark;
+}
+
+.application__label--radio:active::before {
+  border-color: $main-pink;
+}
+
+.application__radio:checked + .application__label--radio::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 13px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $main-pink;
+}
+
+.application__radio:focus + .application__label--radio {
+  outline: 1px solid $black;
 }
 
 .application__label--text-input {
@@ -260,6 +331,10 @@
   color: $main-pink;
 }
 
+.application__label-info {
+  padding-left: 23px;
+}
+
 .application__text-input {
   @include text(18px, 30px, normal, $main-dark);
   width: 100%;
@@ -267,12 +342,21 @@
   border: 2px solid $input-border-grey;
 }
 
+.application__text-input:hover {
+  border-color: $main-dark;
+}
+
+.application__text-input:active {
+  border-color: $main-pink;
+}
+
 .application__text-input::placeholder {
   @include text(18px, 30px, normal, $main-dark);
   opacity: 1;
 }
 
-.application__textarea {
+.application__text-input--textarea {
+  height: 202px;
   resize: none;
 }
 
@@ -280,7 +364,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 34px;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -299,7 +383,16 @@
   width: 280px;
   padding: 15px;
   text-transform: uppercase;
-  background: $submit-green;
+  background-color: $submit-green;
   border: 2px solid $submit-green;
   border-radius: 1px;
+}
+
+.application__button:hover {
+  background-color: $submit-green-hover;
+}
+
+.application__button:active {
+  color: $white-30;
+  background-color: $submit-green;
 }
