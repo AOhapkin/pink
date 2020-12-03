@@ -96,8 +96,8 @@
   display: grid;
   justify-items: center;
   width: 100%;
-  padding-top: 23px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet) {
     padding-bottom: 74px;
@@ -124,7 +124,7 @@
 }
 
 .page-header__slogan {
-  @include text(24px, 29px, 300, $white);
+  @include text(24px, 32px, 300, $white);
   width: 300px;
   margin: 0;
   padding: 0;

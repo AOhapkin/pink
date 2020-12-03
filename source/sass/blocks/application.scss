@@ -1,7 +1,7 @@
 .application {
   display: flex;
   flex-direction: column;
-  padding-top: 24px;
+  padding-top: 44px;
 }
 
 .application__text {
@@ -80,9 +80,10 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  padding-top: 10px;
+  padding: 0;
+  padding-top: 5px;
   padding-right: 20px;
-  padding-bottom: 44px;
+  padding-bottom: 42px;
   padding-left: 20px;
   border: none;
 
@@ -104,7 +105,7 @@
 
 .application__fieldset--full-name {
   order: -10;
-  gap: 29px;
+  gap: 16px;
 
   @media (min-width: $tablet) {
     gap: 40px;
@@ -121,6 +122,8 @@
 }
 
 .application__fieldset--achievements {
+  padding-top: 0;
+
   @media (min-width: $tablet) {
     order: -7;
   }
@@ -153,19 +156,26 @@
   }
 }
 
+.application__fieldset-list {
+  display: grid;
+  row-gap: 52px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .application__legend {
   @include text(14px, 18px, normal, $main-pink);
+  display: block;
   width: 220px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 41px;
   padding: 0;
+  padding-top: 39px;
   text-align: center;
   text-transform: uppercase;
-
-  @media (max-width: $mobile-only) {
-    display: block;
-    padding-top: 50px;
-  }
+  background-color: $light-grey;
 
   @media (min-width: $tablet) {
     width: max-content;
@@ -198,12 +208,44 @@
   }
 }
 
-.application__label-info {
-  padding-left: 15px;
+.application__label--checkbox {
+  position: relative;
+  padding-left: 58px;
 }
 
-.application__label-info--checkbox {
-  padding-left: 55px;
+.application__label--checkbox::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: 38px;
+  height: 37px;
+  border: 2px solid $input-border-grey;
+  background-color: $white;
+}
+
+.application__label--checkbox:hover::before {
+  border-color: $main-dark;
+}
+
+.application__label--checkbox:active::before {
+  border-color: $main-pink;
+}
+
+.application__checkbox:checked + .application__label--checkbox::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form-checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.application__label-info {
+  padding-left: 23px;
 }
 
 .application__label-info--radio {
@@ -211,6 +253,8 @@
 }
 
 .application__label--text-input {
+  display: grid;
+  row-gap: 5px;
   font-size: 14px;
   text-transform: uppercase;
   color: $main-pink;
@@ -219,7 +263,7 @@
 .application__text-input {
   @include text(18px, 30px, normal, $main-dark);
   width: 100%;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: 2px solid $input-border-grey;
 }
 
