@@ -56,19 +56,19 @@
             <legend class="application__legend application__legend--full-name visually-hidden">ФИО участника</legend>
             <ul class="application__fieldset-list">
               <li class="application__fieldset-item">
-                <label class="application__label application__label--text-input application__label--full-name">
+                <label class="application__label application__label--full-name">
                   <span class="application__label-info">Фамилия:</span>
                   <input class="application__text-input" type="text" name="surname-name" placeholder="Укажите фамилию *">
                 </label>
               </li>
               <li class="application__fieldset-item">
-                <label class="application__label application__label--text-input application__label--full-name">
+                <label class="application__label application__label--full-name">
                   <span class="application__label-info">Имя:</span>
                   <input class="application__text-input" type="text" name="first-name" placeholder="Введите ваше имя *">
                 </label>
               </li>
               <li class="application__fieldset-item">
-                <label class="application__label application__label--text-input application__label--full-name">
+                <label class="application__label application__label--full-name">
                   <span class="application__label-info">Отчество:</span>
                   <input class="application__text-input" type="text" name="second-name" placeholder="Ну и отчество тоже">
                 </label>
@@ -106,17 +106,17 @@
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--contacts">
             <legend class="application__legend application__legend--contacts">Контактная информация</legend>
-            <ul class="application__fieldset-list">
+            <ul class="application__fieldset-list application__fieldset-list--contacts">
               <li class="application__fieldset-item">
-                <label class="application__label application__label--text-input application__label--contacts">
-                  <span class="application__label-info">Номер телефона:</span>
-                  <input class="application__text-input" type="tel" name="phone" placeholder="Номер, пожалуйста" maxlength="10">
+                <label class="application__label application__label--text-input application__label--contacts application__label--contacts--phone">
+                  <span class="application__label-info application__label-info--contacts">Номер телефона:</span>
+                  <input class="application__text-input application__text-input--contacts" type="tel" name="phone" placeholder="Номер, пожалуйста" maxlength="10">
                 </label>
               </li>
               <li class="application__fieldset-item">
-                <label class="application__label application__label--text-input application__label--contacts">
-                  <span class="application__label-info">Адрес почты</span>
-                  <input class="application__text-input" type="email" name="email" placeholder="Введите почту *">
+                <label class="application__label application__label--text-input application__label--contacts application__label--contacts--email">
+                  <span class="application__label-info application__label-info--contacts">Адрес почты</span>
+                  <input class="application__text-input application__text-input--contacts" type="email" name="email" placeholder="Введите почту *">
                 </label>
               </li>
             </ul>
@@ -181,7 +181,7 @@
             </a>
           </li>
         </ul>
-        <div class="copyright">
+        <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
