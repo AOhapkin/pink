@@ -78,27 +78,27 @@
           <fieldset class="application__fieldset application__fieldset--achievements">
             <legend class="application__legend application__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
             <ul class="application__fieldset-list application__fieldset-list--checkbox">
-              <li class="application__fieldset-item">
+              <li class="application__fieldset-item application__fieldset-item--checkbox">
                 <input class="application__checkbox visually-hidden" type="checkbox" name="selfie-with-a-shark" id="shark-selfie" checked>
                 <label class="application__label application__label--checkbox" for="shark-selfie">Сделал селфи с акулой</label>
               </li>
-              <li class="application__fieldset-item">
+              <li class="application__fieldset-item application__fieldset-item--checkbox">
                 <input class="application__checkbox visually-hidden" type="checkbox" name="burned-on-the-beach" id="burnt-on-the-beach" checked>
                 <label class="application__label application__label--checkbox" for="burnt-on-the-beach">Обгорел на пляже</label>
               </li>
-              <li class="application__fieldset-item">
+              <li class="application__fieldset-item application__fieldset-item--checkbox">
                 <input class="application__checkbox visually-hidden" type="checkbox" name="saw-chuck-norris" id="saw-chuck-norris">
                 <label class="application__label application__label--checkbox" for="saw-chuck-norris">Видел Чака Норриса</label>
               </li>
-              <li class="application__fieldset-item">
+              <li class="application__fieldset-item application__fieldset-item--checkbox">
                 <input class="application__checkbox visually-hidden" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
                 <label class="application__label application__label--checkbox" for="bought-souvenirs">Накупил сувениров</label>
               </li>
-              <li class="application__fieldset-item">
+              <li class="application__fieldset-item application__fieldset-item--checkbox">
                 <input class="application__checkbox visually-hidden" type="checkbox" name="held-the-tower" id="held-the-tower" checked>
                 <label class="application__label application__label--checkbox" for="held-the-tower">Удержал башню</label>
               </li>
-              <li class="application__fieldset-item">
+              <li class="application__fieldset-item application__fieldset-item--checkbox">
                 <input class="application__checkbox visually-hidden" type="checkbox" name="trashed-the-hotel" id="trashed-the-hotel">
                 <label class="application__label application__label--checkbox" for="trashed-the-hotel">Разгромил отель</label>
               </li>
@@ -122,7 +122,11 @@
             </ul>
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--app">
-            <legend class="application__legend application__legend--app">С каким приложением путешествовали?</legend>
+            <legend class="application__legend application__legend--app">
+              <span class="application__legend-wrapper">
+                С каким приложением путешествовали?
+              </span>
+            </legend>
             <ul class="application__fieldset-list application__fieldset-list--radio">
               <li class="application__fieldset-item">
                 <input class="application__radio visually-hidden" type="radio" name="mobile-app" id="ios-app" checked>
@@ -140,7 +144,7 @@
           </fieldset>
           <fieldset class="application__fieldset application__fieldset--emotion">
             <legend class="application__legend application__legend--emotion">Опишите свои эмоции</legend>
-            <ul class="application__fieldset-list application__fieldset-list--radio">
+            <ul class="application__fieldset-list application__fieldset-list--emotion">
               <li class="application__fieldset-item">
                 <label class="application__label application__label--text-input visually-hidden" for="emotion">Поле для описания эмоций</label>
                 <textarea class="application__text-input application__text-input--textarea" name="emotion" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -150,7 +154,7 @@
           <div class="application__form-bottom">
             <input class="application__button" type="submit" value="Отправить форму">
             <p class="application__text application__text--required">
-              <span class="application__accent">*</span> — обязательные поля
+              <span class="application__accent">*</span> — обязательные<span class="application__text--details"> для заполнения</span> поля
             </p>
           </div>
         </form>
