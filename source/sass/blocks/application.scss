@@ -277,14 +277,12 @@
 .application__fieldset-item--checkbox:nth-child(3) {
   @media (min-width: $desktop) {
     order: 2;
-    // padding-left: 7px;
   }
 }
 
 .application__fieldset-item--checkbox:nth-child(4) {
   @media (min-width: $desktop) {
     order: 5;
-    // padding-left: 7px;
   }
 }
 
@@ -326,6 +324,11 @@
     padding-top: 0;
     padding-right: 25px;
     padding-left: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
