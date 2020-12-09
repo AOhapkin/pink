@@ -4,8 +4,10 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet) {
-    padding-top: 50px;
+    padding-top: 56px;
+    padding-right: 20px;
     padding-bottom: 50px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -27,6 +29,11 @@
 .photo-editor__image {
   display: block;
   justify-self: center;
+
+  @media (min-width: $tablet) {
+    justify-self: left;
+    width: 300px;
+  }
 }
 
 .photo-editor__controls {
@@ -34,7 +41,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 42px;
 
   @media (min-width: $tablet) {
     justify-content: space-between;
@@ -52,9 +59,9 @@
 
 .photo-editor__item {
   display: none;
-  height: 40px;
+  height: 52px;
   border-bottom: 1px solid $main-dark-10;
-  background-color: plum;
+  // background-color: plum;
 
   @media (min-width: $tablet) {
     display: block;
@@ -84,8 +91,8 @@
 .photo-editor__button {
   @include text(18px, 18px, bold, $main-dark);
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   border: 3px solid $main-dark;
   border-radius: 30px;
 

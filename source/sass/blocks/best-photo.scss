@@ -1,9 +1,22 @@
+.best-photo {
+  display: flex;
+  flex-direction: column;
+}
+
 .best-photo__link {
   display: block;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    height: 510px;
+  }
 }
 
 .best-photo__image {
+  display: block;
   width: 100%;
+  height: 100%;
+
 }
 
 .best-photo__author-info {
@@ -24,12 +37,16 @@
 .best-photo__marker {
   @include text(12px, 24px, bold, $white);
   position: absolute;
-  top: -100px;
+  top: -137px;
   right: 20px;
   margin: 0;
-  padding: 10px 20px;
+  padding: 6px 20px;
   text-transform: uppercase;
   background-color: $main-pink;
+
+  @media (min-width: $tablet) {
+    top: -453px;
+  }
 
   @media (min-width: $desktop) {
     // top: 50px;
@@ -39,8 +56,15 @@
 
 .best-photo__blockquote {
   margin: 0;
-  padding: 25px 17px;
+  padding: 18px 17px;
+  padding-right: 10px;
   background-color: $light-grey;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    padding: 22px 30px;
+    padding-bottom: 16px;
+  }
 
   @media (min-width: $desktop) {
     padding: 30px;
@@ -57,15 +81,29 @@
   @include text(12px, 24px, 300, $main-dark);
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .best-photo__text {
   @include text(14px, 24px, normal, $main-dark);
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 
+.best-photo__text-br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .best-photo__likes {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+  }
+
   @media (min-width: $desktop) {
     position: absolute;
     top: 30px;
