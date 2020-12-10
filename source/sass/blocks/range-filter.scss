@@ -5,6 +5,55 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 16px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0;
+    padding-top: 19px;
+    padding-left: 54px;
+  }
+}
+
+.range-filter__control::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: "";
+    width: 22px;
+    top: 10px;
+    left: 4px;
+    height: 22px;
+    background-image: url("../img/range-filter__icon--crop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.range-filter__control--fill::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 3px;
+    width: 24px;
+    height: 22px;
+    background-image: url("../img/range-filter__icon--fill.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.range-filter__control--contrast::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 6px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/range-filter__icon--contrast.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .range-filter__scale {
@@ -15,10 +64,26 @@
 .range-filter__toggle {
   position: absolute;
   top: 11px;
-  left: 193px;
+  left: 78%;
   width: 14px;
   height: 14px;
   background-color: $white;
   border: 2px solid $main-pink;
   border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    top: 14px;
+  }
+}
+
+.range-filter__toggle--fill {
+  @media (min-width: $tablet) {
+    left: 31%;
+  }
+}
+
+.range-filter__toggle--contrast {
+  @media (min-width: $tablet) {
+    left: 59%;
+  }
 }

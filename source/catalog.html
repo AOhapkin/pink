@@ -166,9 +166,12 @@
         </div>
       </section>
       <section class="photo-editor">
+        <h2 class="visually-hidden">Редактор фотографий</h2>
         <div class="photo-editor__wrapper">
           <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-            <img class="photo-editor__image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Результат работы фоторедактора">
+            <div class="photo-editor__result">
+              <img class="photo-editor__result-image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Результат работы фоторедактора">
+            </div>
             <div class="photo-editor__controls switcher">
               <div class="switcher__controls">
                 <button class="switcher__button switcher__button--crop switcher__button--current" type="button" aria-label="Обрезать кадр">
@@ -184,9 +187,9 @@
               <ul class="photo-editor__list">
                 <li class="photo-editor__item photo-editor__item--current-item">
                   <div class="range-filter">
-                    <div class="range-filter__control">
+                    <div class="range-filter__control range-filter__control--crop">
                       <div class="range-filter__scale"></div>
-                      <div class="range-filter__toggle"></div>
+                      <div class="range-filter__toggle range-filter__toggle--crop"></div>
                     </div>
                     <label class="visually-hidden">
                       Значение фильтра масштабирования
@@ -196,11 +199,11 @@
                 </li>
                 <li class="photo-editor__item">
                   <div class="range-filter">
-                    <div class="range-filter__control">
+                    <div class="range-filter__control range-filter__control--fill">
                       <div class="range-filter__scale">
                         <div class="range-filter__bar"></div>
                       </div>
-                      <div class="range-filter__toggle"></div>
+                      <div class="range-filter__toggle range-filter__toggle--fill"></div>
                     </div>
                     <label class="visually-hidden">
                       Значение фильтра заливки цветом
@@ -210,11 +213,11 @@
                 </li>
                 <li class="photo-editor__item">
                   <div class="range-filter">
-                    <div class="range-filter__control">
+                    <div class="range-filter__control range-filter__control--contrast">
                       <div class="range-filter__scale">
                         <div class="range-filter__bar"></div>
                       </div>
-                      <div class="range-filter__toggle"></div>
+                      <div class="range-filter__toggle range-filter__toggle--contrast"></div>
                     </div>
                     <label class="visually-hidden">
                       Значение фильтра контрастности
