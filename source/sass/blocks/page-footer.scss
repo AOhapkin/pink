@@ -27,6 +27,18 @@
   }
 }
 
+.page-footer__wrapper--catalog-page {
+  padding-top: 40px;
+
+  @media (min-width: $tablet) {
+    padding-top: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 96px;
+  }
+}
+
 .page-footer__logo {
   @media (min-width: $tablet) {
     margin-right: 40px;

@@ -124,6 +124,18 @@
   }
 }
 
+.page-header__bottom-wrapper--catalog-page {
+  padding-bottom: 77px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 127px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 89px;
+  }
+}
+
 .page-header__slogan {
   @include text(24px, 32px, 300, $white);
   width: 300px;

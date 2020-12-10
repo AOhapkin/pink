@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 35px;
+  padding-right: 11px;
 
   @media (min-width: $tablet) {
     display: none;
@@ -16,4 +17,8 @@
   padding: 0;
   border: none;
   background: none;
+}
+
+.switcher__button--current path {
+  fill: $main-pink;
 }

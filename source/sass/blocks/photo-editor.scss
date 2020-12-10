@@ -4,14 +4,19 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 56px;
+    padding-right: 20px;
+    padding-bottom: 54px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop) {
     width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 9px;
+    padding-left: 80px;
+    padding-bottom: 57px;
   }
 }
 
@@ -21,12 +26,29 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 45% 50%;
+    column-gap: 0;
   }
 }
 
-.photo-editor__image {
-  display: block;
+.photo-editor__result {
   justify-self: center;
+  background-color: $main-dark;
+
+  @media (min-width: $tablet) {
+    justify-self: left;
+    width: 300px;
+    min-height: 400px;
+  }
+}
+
+.photo-editor__result-image {
+  display: block;
+  width: 100%;
 }
 
 .photo-editor__controls {
@@ -34,7 +56,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  padding-top: 40px;
+  padding-top: 42px;
 
   @media (min-width: $tablet) {
     justify-content: space-between;
@@ -48,16 +70,33 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    padding-left: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 410px;
+    padding: 0;
+  }
 }
 
 .photo-editor__item {
   display: none;
-  height: 40px;
+  height: 52px;
   border-bottom: 1px solid $main-dark-10;
-  background-color: plum;
 
   @media (min-width: $tablet) {
     display: block;
+    height: auto;
+    padding-right: 18px;
+    padding-bottom: 13px;
+  }
+}
+
+.photo-editor__item:not(:first-child) {
+  @media (min-width: $tablet) {
+    padding-top: 16px;
   }
 }
 
@@ -74,6 +113,13 @@
   padding-right: 20px;
   padding-left: 20px;
 
+  @media (min-width: $tablet) {
+    gap: 25px;
+    padding-top: 0;
+    padding-right: 13px;
+    padding-left: 8px;
+  }
+
   @media (min-width: $desktop) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,13 +130,17 @@
 .photo-editor__button {
   @include text(18px, 18px, bold, $main-dark);
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   border: 3px solid $main-dark;
   border-radius: 30px;
 
   @media (min-width: $desktop) {
     width: 170px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 180px;
   }
 }
 
