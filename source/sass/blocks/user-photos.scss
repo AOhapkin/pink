@@ -29,6 +29,11 @@
     padding-top: 63px;
     padding-bottom: 71px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 60px;
+    padding-bottom: 67px;
+  }
 }
 
 .user-photos__slogan {
@@ -63,6 +68,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 54px;
   }
 }
 
@@ -70,10 +76,14 @@
   display: grid;
   background-color: $light-grey;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     min-height: 454px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 554px;
   }
 }
 
@@ -81,8 +91,12 @@
   display: block;
   background-color: $main-dark;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     height: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 400px;
   }
 }
 
@@ -96,10 +110,15 @@
   padding: 18px 17px;
   padding-bottom: 10px;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     margin-bottom: auto;
     padding: 22px 30px;
     padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 23px;
+    padding-left: 28px;
   }
 }
 
@@ -127,9 +146,14 @@
   padding-bottom: 19px;
   padding-left: 17px;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     padding-right: 30px;
     padding-bottom: 24px;
     padding-left: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 22px;
+    padding-left: 27px;
   }
 }

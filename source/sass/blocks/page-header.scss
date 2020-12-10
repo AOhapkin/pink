@@ -130,6 +130,10 @@
   @media (min-width: $tablet) {
     padding-bottom: 127px;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 89px;
+  }
 }
 
 .page-header__slogan {
