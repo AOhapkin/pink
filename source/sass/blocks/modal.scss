@@ -1,0 +1,143 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  min-height: 100px;
+  background-color: $white;
+  box-shadow: 0px 7px 15px $modal-shadow;
+  border-radius: 1px;
+
+  @media (min-width: $tablet) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 460px;
+    box-shadow: 0px 7px 15px $modal-shadow;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 780px;
+  }
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal-top {
+  padding-top: 46px;
+  padding-right: 22px;
+  padding-left: 22px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 63px;
+  }
+}
+
+.modal-top--succes {
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 39px;
+  }
+}
+
+.modal-title {
+  @include text(18px, 24px, bold, $black);
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    @include text(30px, 40px, bold, $black);
+    width: 250px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 500px;
+  }
+}
+
+.modal-text {
+  @include text(14px, 24px, normal, $main-dark);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    @include text(18px, 24px, normal, $main-dark);
+    width: 320px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 400px;
+  }
+}
+
+.modal-br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 52px;
+
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+    background-color: $light-grey;
+    border-radius: 0px 0px 5px 5px;
+  }
+}
+
+.modal-bottom--succes {
+  padding-top: 50px;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
+}
+
+.modal-button {
+  @include text(18px, 30px, bold, $white);
+  width: 278px;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border: 2px solid $submit-green;
+  border-radius: 1px;
+  background-color: $submit-green;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+  }
+}
+
+.modal-button--succes {
+  @media (min-width: $desktop) {
+    width: 459px;
+  }
+}
