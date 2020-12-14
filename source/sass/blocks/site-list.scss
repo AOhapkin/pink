@@ -16,6 +16,10 @@
 
 .site-list--menu-open {
   display: block;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .site-list__item {

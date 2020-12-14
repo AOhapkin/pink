@@ -10,26 +10,43 @@
 
 .page-header__top {
   background-color: $black-30;
-  padding-top: 21px;
   padding-bottom: 12px;
 
   @media (min-width: $tablet) {
-    padding-top: 28px;
     padding-bottom: 34px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 44px;
   }
 }
 
+.page-header__top--menu-open {
+  padding-bottom: 0;
+}
+
 .page-header__top-wrapper {
+  padding-top: 21px;
+
+  @media (min-width: $tablet) {
+    padding-top: 28px;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 44px;
   }
+}
+
+.page-header__top-wrapper--menu-open {
+  background-color: $main-dark;
+
+  @media (min-width: $desktop) {
+    background: none;
+  }
+}
+
+.page-header__top-wrapper--menu-open .page-header__logo-wrapper {
+  padding-bottom: 16px;
 }
 
 .page-header__logo-wrapper {
@@ -110,6 +127,7 @@
 }
 
 .page-header__bottom-wrapper--index-page {
+  padding-top: 17px;
   padding-bottom: 0;
 
   @media (min-width: $tablet) {
