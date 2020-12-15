@@ -65,7 +65,34 @@
 }
 
 .page-header__logo-link:active path {
+  fill: $white;
   opacity: 0.3;
+}
+
+.page-header__logo-icon--mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__logo-icon--tablet {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.page-header__logo-icon--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
 
 .page-header__toggle {
