@@ -2,10 +2,30 @@
   @include text(18px, 32px, bold, $white);
   color: $white;
   background-color: $main-dark;
-  background-image: url("../img/back-tablet.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
 }
 
 .page-header__top {
