@@ -80,14 +80,31 @@
   content: "";
   width: 157px;
   height: 277px;
-  background-image: url("../img/advan-iphone.png");
-  background-size: cover;
+  background-image: url("../img/advantages-phone-screen--mobile.png"),
+                    url("../img/advantages-phone--mobile.png");
+  background-size: 137px 247px, cover;
+  background-repeat: no-repeat;
+  background-position: 10px 36px, top center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages-phone-screen--mobile@2x.png"),
+                      url("../img/advantages-phone--mobile@2x.png");
+  }
 
   @media (min-width: $tablet) {
     left: 20px;
     transform: none;
     width: 268px;
     height: 480px;
+    background-image: url("../img/advantages-phone-screen--tablet.png"),
+                      url("../img/advantages-phone--tablet.png");
+    background-size: 239px 423px, cover;
+    background-position: 15px 60px, top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-phone-screen--tablet@2x.png"),
+                        url("../img/advantages-phone--tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop) {
@@ -110,7 +127,7 @@
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 18px;
+    column-gap: 22px;
     width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
@@ -118,6 +135,7 @@
 }
 
 .advantages__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,6 +149,44 @@
   @media (min-width: $desktop) {
     align-items: center;
     padding-top: 287px;
+  }
+}
+
+.advantages__item::before {
+  @media (min-width: $desktop) {
+    position: absolute;
+    content: "";
+    top: -69px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background-image: url("../img/advantages-phone-screen--desktop-grey.png"), url("../img/advantages-phone--desktop.png"), url("../img/advantages-shadow.svg");
+    background-repeat: no-repeat;
+    background-position: 64px 40px, 56px 0, 0 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-phone-screen--desktop-grey@2x.png"), url("../img/advantages-phone--desktop@2x.png"), url("../img/advantages-shadow.svg");
+    }
+  }
+}
+
+.advantages__item--photo-decoration::before {
+  @media (min-width: $desktop) {
+    background-image: url("../img/advantages-phone-screen--desktop-pink.png"), url("../img/advantages-phone--desktop.png"), url("../img/advantages-shadow.svg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-phone-screen--desktop-pink@2x.png"), url("../img/advantages-phone--desktop@2x.png"), url("../img/advantages-shadow.svg");
+    }
+  }
+}
+
+.advantages__item--make-friends::before {
+  @media (min-width: $desktop) {
+    background-image: url("../img/advantages-phone-screen--desktop-smile.png"), url("../img/advantages-phone--desktop.png"), url("../img/advantages-shadow.svg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/advantages-phone-screen--desktop-smile@2x.png"), url("../img/advantages-phone--desktop@2x.png"), url("../img/advantages-shadow.svg");
+    }
   }
 }
 
