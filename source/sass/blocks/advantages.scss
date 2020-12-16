@@ -80,15 +80,13 @@
   content: "";
   width: 157px;
   height: 277px;
-  background-image: url("../img/advantages-phone-screen--mobile.png"),
-                    url("../img/advantages-phone--mobile.png");
+  background-image: url("../img/advantages-phone-screen--mobile.png"), url("../img/advantages-phone--mobile.png");
   background-size: 137px 247px, cover;
   background-repeat: no-repeat;
   background-position: 10px 36px, top center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/advantages-phone-screen--mobile@2x.png"),
-                      url("../img/advantages-phone--mobile@2x.png");
+    background-image: url("../img/advantages-phone-screen--mobile@2x.png"), url("../img/advantages-phone--mobile@2x.png");
   }
 
   @media (min-width: $tablet) {
@@ -96,14 +94,12 @@
     transform: none;
     width: 268px;
     height: 480px;
-    background-image: url("../img/advantages-phone-screen--tablet.png"),
-                      url("../img/advantages-phone--tablet.png");
+    background-image: url("../img/advantages-phone-screen--tablet.png"), url("../img/advantages-phone--tablet.png");
     background-size: 239px 423px, cover;
     background-position: 15px 60px, top center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/advantages-phone-screen--tablet@2x.png"),
-                        url("../img/advantages-phone--tablet@2x.png");
+      background-image: url("../img/advantages-phone-screen--tablet@2x.png"), url("../img/advantages-phone--tablet@2x.png");
     }
   }
 
