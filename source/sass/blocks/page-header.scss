@@ -6,7 +6,7 @@
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
@@ -14,6 +14,7 @@
 
   @media (min-width: $tablet) {
     background-image: url("../img/back-tablet.jpg");
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -163,7 +164,6 @@
   z-index: 10;
 
   @media (min-width: $tablet) {
-    // width: 630px;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -181,6 +181,7 @@
   z-index: -1;
   content: "";
   top: 110px;
+  right: 0;
   width: 320px;
   height: 286px;
   background-image: url("../img/hand-mobile.png");
@@ -193,8 +194,8 @@
 
   @media (min-width: $tablet) {
     top: 73px;
-    right: 6px;
-    width: 750px;
+    right: -15px;
+    width: 660px;
     height: 545px;
     background-image: url("../img/hand-tablet.png");
     background-size: cover;
@@ -213,6 +214,47 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hand-desktop@2x.png");
+    }
+  }
+}
+
+.page-header__bottom--index-page::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 142px;
+  right: 105px;
+  width: 111px;
+  height: 197px;
+  background-image: url("../img/hand-screen-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-screen-desktop@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    top: 126px;
+    right: 79px;
+    width: 195px;
+    height: 346px;
+    background-image: url("../img/hand-screen-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-screen-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    top: 162px;
+    right: 129px;
+    width: 230px;
+    height: 408px;
+    background-image: url("../img/hand-screen-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-screen-desktop@2x.jpg");
     }
   }
 }
@@ -236,7 +278,7 @@
 }
 
 .page-header__bottom-wrapper--index-page {
-  padding-top: 17px;
+  padding-top: 21px;
   padding-bottom: 0;
 
   @media (min-width: $tablet) {
@@ -282,7 +324,7 @@
 }
 
 .page-header__slogan--index-page {
-  margin-bottom: 315px;
+  margin-bottom: 310px;
 
   @media (min-width: $tablet) {
     @include text(40px, 48px, 300, $white);
