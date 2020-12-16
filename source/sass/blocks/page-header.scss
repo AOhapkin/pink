@@ -1,5 +1,6 @@
 .page-header {
   @include text(18px, 32px, bold, $white);
+  overflow: hidden;
   color: $white;
   background-color: $main-dark;
   background-image: url("../img/back-mobile.jpg");
@@ -34,6 +35,10 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 34px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 48px;
   }
 }
 
@@ -75,8 +80,20 @@
   padding-right: 20px;
   padding-left: 20px;
 
+  @media (min-width: $tablet) {
+    align-items: baseline;
+  }
+
   @media (min-width: $desktop) {
+    position: relative;
     padding: 0;
+  }
+}
+
+.page-header__logo-link {
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -17px;
   }
 }
 
@@ -142,9 +159,13 @@
 }
 
 .page-header__bottom--index-page {
+  position: relative;
+  z-index: 10;
+
   @media (min-width: $tablet) {
-    width: 300px;
-    margin-left: 14px;
+    // width: 630px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   @media (min-width: $desktop) {
@@ -152,6 +173,47 @@
     width: 950px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+.page-header__bottom--index-page::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 110px;
+  width: 320px;
+  height: 286px;
+  background-image: url("../img/hand-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet) {
+    top: 73px;
+    right: 6px;
+    width: 750px;
+    height: 545px;
+    background-image: url("../img/hand-tablet.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    top: 100px;
+    right: -119px;
+    width: 1050px;
+    height: 645px;
+    background-image: url("../img/hand-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-desktop@2x.png");
+    }
   }
 }
 
@@ -179,13 +241,14 @@
 
   @media (min-width: $tablet) {
     width: 300px;
+    margin-right: auto;
     padding-top: 94px;
     padding-bottom: 83px;
   }
 
   @media (min-width: $desktop) {
     padding-top: 97px;
-    padding-bottom: 98px;
+    padding-bottom: 96px;
   }
 }
 
