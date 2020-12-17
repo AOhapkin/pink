@@ -1,35 +1,78 @@
 .page-header {
   @include text(18px, 32px, bold, $white);
+  overflow: hidden;
   color: $white;
   background-color: $main-dark;
-  background-image: url("../img/back-tablet.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/back-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
 }
 
 .page-header__top {
   background-color: $black-30;
-  padding-top: 21px;
   padding-bottom: 12px;
 
   @media (min-width: $tablet) {
-    padding-top: 28px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 44px;
+    padding-bottom: 48px;
   }
 }
 
+.page-header__top--menu-open {
+  padding-bottom: 0;
+}
+
 .page-header__top-wrapper {
+  padding-top: 21px;
+
+  @media (min-width: $tablet) {
+    padding-top: 28px;
+  }
+
   @media (min-width: $desktop) {
     display: flex;
     width: $content-desktop;
     margin-right: auto;
     margin-left: auto;
+    padding-top: 44px;
   }
+}
+
+.page-header__top-wrapper--menu-open {
+  background-color: $main-dark;
+
+  @media (min-width: $desktop) {
+    background: none;
+  }
+}
+
+.page-header__top-wrapper--menu-open .page-header__logo-wrapper {
+  padding-bottom: 16px;
 }
 
 .page-header__logo-wrapper {
@@ -38,8 +81,20 @@
   padding-right: 20px;
   padding-left: 20px;
 
+  @media (min-width: $tablet) {
+    align-items: baseline;
+  }
+
   @media (min-width: $desktop) {
+    position: relative;
     padding: 0;
+  }
+}
+
+.page-header__logo-link {
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: -17px;
   }
 }
 
@@ -48,7 +103,34 @@
 }
 
 .page-header__logo-link:active path {
+  fill: $white;
   opacity: 0.3;
+}
+
+.page-header__logo-icon--mobile {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__logo-icon--tablet {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.page-header__logo-icon--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
 
 .page-header__toggle {
@@ -78,9 +160,12 @@
 }
 
 .page-header__bottom--index-page {
+  position: relative;
+  z-index: 10;
+
   @media (min-width: $tablet) {
-    width: 300px;
-    margin-left: 14px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   @media (min-width: $desktop) {
@@ -88,6 +173,89 @@
     width: 950px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+.page-header__bottom--index-page::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 110px;
+  right: 0;
+  width: 320px;
+  height: 286px;
+  background-image: url("../img/hand-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet) {
+    top: 73px;
+    right: -15px;
+    width: 660px;
+    height: 545px;
+    background-image: url("../img/hand-tablet.png");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    top: 100px;
+    right: -119px;
+    width: 1050px;
+    height: 645px;
+    background-image: url("../img/hand-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-desktop@2x.png");
+    }
+  }
+}
+
+.page-header__bottom--index-page::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 142px;
+  right: 105px;
+  width: 111px;
+  height: 197px;
+  background-image: url("../img/hand-screen-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-screen-desktop@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    top: 126px;
+    right: 79px;
+    width: 195px;
+    height: 346px;
+    background-image: url("../img/hand-screen-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-screen-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    top: 162px;
+    right: 129px;
+    width: 230px;
+    height: 408px;
+    background-image: url("../img/hand-screen-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-screen-desktop@2x.jpg");
+    }
   }
 }
 
@@ -110,17 +278,19 @@
 }
 
 .page-header__bottom-wrapper--index-page {
+  padding-top: 21px;
   padding-bottom: 0;
 
   @media (min-width: $tablet) {
     width: 300px;
+    margin-right: auto;
     padding-top: 94px;
     padding-bottom: 83px;
   }
 
   @media (min-width: $desktop) {
     padding-top: 97px;
-    padding-bottom: 98px;
+    padding-bottom: 96px;
   }
 }
 
@@ -154,7 +324,7 @@
 }
 
 .page-header__slogan--index-page {
-  margin-bottom: 315px;
+  margin-bottom: 310px;
 
   @media (min-width: $tablet) {
     @include text(40px, 48px, 300, $white);
