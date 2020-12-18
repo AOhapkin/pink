@@ -103,6 +103,11 @@
 .user-photos__image {
   display: block;
   width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    height: 100%;
+  }
 }
 
 .user-photos__blockquote {

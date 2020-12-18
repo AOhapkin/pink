@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--inner-page">
       <div class="page-header__top page-header__top--menu-open">
         <div class="page-header__top-wrapper page-header__top-wrapper--menu-open">
           <div class="page-header__logo-wrapper">
@@ -59,7 +59,11 @@
         <h2 class="visually-hidden">Раздел с фотографиями</h2>
         <article class="user-photos__best-photo best-photo">
           <a class="best-photo__link" href="">
-            <img class="best-photo__image" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Фотография с панорамой">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama--desktop.jpg 1x, img/panorama--desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama--tablet.jpg 1x, img/panorama--tablet@2x.jpg 2x">
+              <img class="best-photo__image" src="img/panorama--mobile.jpg" srcset="img/panorama--mobile@2x.jpg 2x" width="320" height="137" alt="Фотография с панорамой">
+            </picture>
           </a>
           <div class="best-photo__author-info">
             <span class="best-photo__marker">Панорама дня</span>
@@ -78,7 +82,11 @@
           <ul class="user-photos__list">
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-1--desktop.jpg 1x, img/photo-1--desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-1--tablet.jpg 1x, img/photo-1--tablet@2x.jpg 2x">
+                  <img class="user-photos__image" src="img/photo-1--mobile.jpg" srcset="img/photo-1--mobile@2x.jpg 2x" width="280" height="180" alt="Фотография от пользователя">
+                </picture>
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Левон</cite>
@@ -92,7 +100,11 @@
             </li>
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-2--desktop.jpg 1x, img/photo-2--desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-2--tablet.jpg 1x, img/photo-2--tablet@2x.jpg 2x">
+                  <img class="user-photos__image" src="img/photo-2--mobile.jpg" srcset="img/photo-2--mobile@2x.jpg 2x" width="280" height="180" alt="Фотография от пользователя">
+                </picture>
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Антон</cite>
@@ -106,7 +118,11 @@
             </li>
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-3--desktop.jpg 1x, img/photo-3--desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-3--tablet.jpg 1x, img/photo-3--tablet@2x.jpg 2x">
+                  <img class="user-photos__image" src="img/photo-3--mobile.jpg" srcset="img/photo-3--mobile@2x.jpg 2x" width="280" height="180" alt="Фотография от пользователя">
+                </picture>
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Борис</cite>
@@ -120,7 +136,11 @@
             </li>
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-4--desktop.jpg 1x, img/photo-4--desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-4--tablet.jpg 1x, img/photo-4--tablet@2x.jpg 2x">
+                  <img class="user-photos__image" src="img/photo-4--mobile.jpg" srcset="img/photo-4--mobile@2x.jpg 2x" width="280" height="180" alt="Фотография от пользователя">
+                </picture>
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Сергей</cite>
@@ -134,7 +154,11 @@
             </li>
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-5--desktop.jpg 1x, img/photo-5--desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-5--tablet.jpg 1x, img/photo-5--tablet@2x.jpg 2x">
+                  <img class="user-photos__image" src="img/photo-5--mobile.jpg" srcset="img/photo-5--mobile@2x.jpg 2x" width="280" height="180" alt="Фотография от пользователя">
+                </picture>
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Максим</cite>
@@ -148,7 +172,11 @@
             </li>
             <li class="user-photos__item">
               <a class="user-photos__link" href="">
-                <img class="user-photos__image user-photos__image--best-photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фотография от пользователя">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-6--desktop.jpg 1x, img/photo-6--desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-6--tablet.jpg 1x, img/photo-6--tablet@2x.jpg 2x">
+                  <img class="user-photos__image" src="img/photo-6--mobile.jpg" srcset="img/photo-6--mobile@2x.jpg 2x" width="280" height="180" alt="Фотография от пользователя">
+                </picture>
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Надежда</cite>
@@ -172,7 +200,11 @@
         <div class="photo-editor__wrapper">
           <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
             <div class="photo-editor__result">
-              <img class="photo-editor__result-image" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Результат работы фоторедактора">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-editor-image--desktop.jpg 1x, img/photo-editor-image--desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-editor-image--tablet.jpg 1x, img/photo-editor-image--tablet@2x.jpg 2x">
+                <img class="photo-editor__result-image" src="img/photo-editor-image--mobile.jpg" srcset="img/photo-editor-image--mobile@2x.jpg 2x" width="280" height="374" alt="Результат работы фоторедактора">
+              </picture>
             </div>
             <div class="photo-editor__controls switcher">
               <div class="switcher__controls">
