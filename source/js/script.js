@@ -9,7 +9,7 @@ let pageHeaderIconClose = document.querySelector(".page-header__toggle-icon--clo
 // let modalSucces = document.querySelector(".modal--succes");
 // let modalButtonSucces = modalSucces.querySelector(".modal-button");
 
-// close menu + menu toggle
+// close menu + show menu toggle
 
 siteMenu.classList.remove("site-list--menu-open");
 pageHeaderIconOpen.classList.remove("page-header__toggle-icon--hide");
