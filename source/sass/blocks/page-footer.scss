@@ -40,6 +40,8 @@
 }
 
 .page-footer__logo {
+  fill: $main-dark;
+
   @media (min-width: $tablet) {
     margin-right: 40px;
   }
@@ -49,16 +51,17 @@
   }
 }
 
-.page-footer__logo:hover .page-footer__logo-letters {
+.page-footer__logo:hover {
   fill: $main-pink;
 }
 
-.page-footer__logo:active .page-footer__logo-letters {
+.page-footer__logo:active {
   fill: $main-dark;
+  opacity: 0.3;
 }
 
-.page-footer__logo:active {
-  opacity: 0.3;
+.page-footer__logo-glasses {
+  fill: $main-pink;
 }
 
 .page-footer__copyright {

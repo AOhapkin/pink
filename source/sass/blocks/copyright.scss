@@ -20,7 +20,11 @@
   }
 }
 
-.copyright__link:hover path {
+.copyright__link {
+  fill: $main-pink;
+}
+
+.copyright__link:hover {
   fill: $main-dark;
 }
 

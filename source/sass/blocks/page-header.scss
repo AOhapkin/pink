@@ -96,17 +96,23 @@
 }
 
 .page-header__logo-link {
+  fill: $white;
+
   @media (min-width: $desktop) {
     position: absolute;
     top: -17px;
   }
 }
 
-.page-header__logo-link:hover path {
+.page-header__logo-stars {
   fill: $main-pink;
 }
 
-.page-header__logo-link:active path {
+.page-header__logo-link:hover {
+  fill: $main-pink;
+}
+
+.page-header__logo-link:active {
   fill: $white;
   opacity: 0.3;
 }
@@ -144,18 +150,23 @@
   padding: 0;
   background: none;
   border: none;
+  fill: $white;
 
   @media (min-width: $desktop) {
     display: none;
   }
 }
 
-.page-header__toggle:hover path {
+.page-header__toggle:hover {
   fill: $main-pink;
 }
 
-.page-header__toggle:active path {
+.page-header__toggle:active {
   opacity: 0.3;
+}
+
+.page-header__toggle-icon--hide {
+  display: none;
 }
 
 .page-header__bottom {

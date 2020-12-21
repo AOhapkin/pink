@@ -134,6 +134,7 @@
   background-image: url("../img/reviews-button-next.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.3;
 
   @media (min-width: $desktop) {
     display: block;
@@ -144,4 +145,12 @@
 .reviews__button--prev {
   order: -1;
   background-image: url("../img/reviews-button-prev.svg");
+}
+
+.reviews__button:hover {
+  opacity: 0.6;
+}
+
+.reviews__button:active {
+  opacity: 0.1;
 }
