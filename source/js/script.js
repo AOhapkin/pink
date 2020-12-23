@@ -1,4 +1,4 @@
-let MenuToggle = document.querySelector(".page-header__toggle");
+let menuToggle = document.querySelector(".page-header__toggle");
 let siteMenu = document.querySelector(".site-list");
 let pageHeaderTop = document.querySelector(".page-header__top");
 let pageHeaderTopWrapper = document.querySelector(".page-header__top-wrapper");
