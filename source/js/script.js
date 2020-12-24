@@ -16,7 +16,7 @@ pageHeaderIconOpen.classList.remove("page-header__toggle-icon--hide");
 pageHeaderTop.classList.remove("page-header__top--menu-open");
 pageHeaderTopWrapper.classList.remove("page-header__top-wrapper--menu-open");
 
-MenuToggle.addEventListener("click", function(evt) {
+menuToggle.addEventListener("click", function(evt) {
   evt.preventDefault();
   siteMenu.classList.toggle("site-list--menu-open");
   pageHeaderTop.classList.toggle("page-header__top--menu-open");

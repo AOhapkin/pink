@@ -19,6 +19,16 @@
   background: none;
 }
 
-.switcher__button--current path {
+.switcher__button .switcher__icon {
+  fill: $main-dark;
+  opacity: 0.3;
+}
+
+.switcher__button:hover .switcher__icon {
+  opacity: 0.5;
+}
+
+.switcher__button--current .switcher__icon {
   fill: $main-pink;
+  opacity: 1;
 }
