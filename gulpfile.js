@@ -6,6 +6,15 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+// Test
+
+const pages = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("source/html"))
+}
+
+exports.pages = pages;
+
 // Styles
 
 const styles = () => {
@@ -49,3 +58,19 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "sourse/fonts/*.{woff2,woff}",
+    "sourse/*.ico",
+    "sourse/img/**/*.{jpg,png,svg}"
+  ], {
+    base: "sourse"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
