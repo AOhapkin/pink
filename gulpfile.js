@@ -10,6 +10,8 @@ const del = require("del");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -24,7 +26,7 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -35,7 +37,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -52,10 +54,6 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 // Copy
 
@@ -81,10 +79,18 @@ const clean = () => {
 
 exports.clean = clean;
 
+// HTML
+
+const html = () => {
+  return gulp.src("source/**/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"))
+}
+
 // Imagemin
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true}),
@@ -104,3 +110,46 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(svgstore())
+    .pipe(rename(sprite.svg))
+    .pipe(gulp.dest(build/img));
+}
+
+exports.sprite = sprite;
+
+exports.default = gulp.series(
+  clean,
+  gulp.parallel(
+    styles,
+    html,
+    // sprite,
+    copy,
+    createWebp
+  ),
+  gulp.series(
+    server, watcher
+  )
+);
+
+
+
+// Build
+
+const build = gulp.series(
+  clean,
+  gulp.parallel(
+    styles,
+    html,
+    copy,
+    images,
+    createWebp,
+    // sprite
+  )
+)
+
+exports.build = build;
