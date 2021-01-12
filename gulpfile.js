@@ -61,7 +61,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}"
+    "source/img/*.{jpg,png,svg}"
   ], {
     base: "source"
   })
@@ -82,7 +82,7 @@ exports.clean = clean;
 // HTML
 
 const html = () => {
-  return gulp.src("source/**/*.html")
+  return gulp.src("source/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
 }
@@ -116,18 +116,18 @@ exports.createWebp = createWebp;
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
-    .pipe(rename(sprite.svg))
-    .pipe(gulp.dest(build/img));
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 }
 
 exports.sprite = sprite;
 
 exports.default = gulp.series(
   clean,
+  sprite,
   gulp.parallel(
     styles,
     html,
-    // sprite,
     copy,
     createWebp
   ),
@@ -142,13 +142,13 @@ exports.default = gulp.series(
 
 const build = gulp.series(
   clean,
+  sprite,
   gulp.parallel(
     styles,
     html,
     copy,
     images,
-    createWebp,
-    // sprite
+    createWebp
   )
 )
 
