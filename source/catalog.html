@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--inner-page">
@@ -69,6 +69,7 @@
       <section class="user-photos">
         <h2 class="visually-hidden">Раздел с фотографиями</h2>
         <article class="user-photos__best-photo best-photo">
+          <h3 class="visually-hidden">Лучшая фотография</h3>
           <a class="best-photo__link" href="">
             <picture>
               <source type="image/webp" srcset="img/panorama--desktop.webp 1x, img/panorama--desktop@2x.webp 2x">
@@ -83,7 +84,7 @@
             <span class="best-photo__marker">Панорама дня</span>
             <blockquote class="best-photo__blockquote">
               <cite class="best-photo__autor-name">Анна</cite>
-              <time class="best-photo__time">(5 минут назад)</time>
+              <span class="best-photo__time">(5 минут назад)</span>
               <p class="best-photo__text">Прыгать или нет? Напишите в комментарии свой совет и<br class="best-photo__text-br"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="best-photo__likes likes likes--best-photo">
                 <button class="likes__button" type="button" aria-label="Поставить лайк"></button>
@@ -107,7 +108,7 @@
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Левон</cite>
-                <time class="user-photos__time">(5 часов назад)</time>
+                <span class="user-photos__time">(5 часов назад)</span>
                 <p class="user-photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </blockquote>
               <div class="user-photos__likes likes">
@@ -128,7 +129,7 @@
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Антон</cite>
-                <time class="user-photos__time">(12 часов назад)</time>
+                <span class="user-photos__time">(12 часов назад)</span>
                 <p class="user-photos__text">Соседи будут рады!</p>
               </blockquote>
               <div class="user-photos__likes likes">
@@ -149,7 +150,7 @@
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Борис</cite>
-                <time class="user-photos__time">(20 часов назад)</time>
+                <span class="user-photos__time">(20 часов назад)</span>
                 <p class="user-photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               </blockquote>
               <div class="user-photos__likes likes">
@@ -170,7 +171,7 @@
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Сергей</cite>
-                <time class="user-photos__time">(25 часов назад)</time>
+                <span class="user-photos__time">(25 часов назад)</span>
                 <p class="user-photos__text">Самая кубанская в мире!</p>
               </blockquote>
               <div class="user-photos__likes likes">
@@ -191,7 +192,7 @@
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Максим</cite>
-                <time class="user-photos__time">(40 часов назад)</time>
+                <span class="user-photos__time">(40 часов назад)</span>
                 <p class="user-photos__text">Где снег-то?</p>
               </blockquote>
               <div class="user-photos__likes likes">
@@ -212,7 +213,7 @@
               </a>
               <blockquote class="user-photos__blockquote">
                 <cite class="user-photos__autor-name">Надежда</cite>
-                <time class="user-photos__time">(45 часов назад)</time>
+                <span class="user-photos__time">(45 часов назад)</span>
                 <p class="user-photos__text">Всем GM и взаимные лайки!</p>
               </blockquote>
               <div class="user-photos__likes likes">
@@ -354,6 +355,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
