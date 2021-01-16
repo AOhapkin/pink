@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet) {
     padding-top: 97px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $desktop) {
@@ -152,6 +152,11 @@
   display: block;
   text-transform: uppercase;
 
+  @media (min-width: $tablet) {
+    top: 11px;
+    left: 7px;
+  }
+
   @media (min-width: $desktop) {
     top: 17px;
     left: 17px;
@@ -197,14 +202,11 @@
   border-radius: 1px 0 0 0;
   border-top: none;
   background-color: $white;
-
-  @media (min-width: $mobile-only) {
-    width: 280px;
-  }
+  width: 280px;
 
   @media (min-width: $tablet) {
-    min-height: 27px;
-    padding-top: 10px;
+    width: 155px;
+    padding-top: 11px;
     padding-bottom: 10px;
   }
 

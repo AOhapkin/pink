@@ -90,7 +90,7 @@
 .range-filter__toggle {
   position: absolute;
   top: 11px;
-  left: 78%;
+  left: 80%;
   width: 14px;
   height: 14px;
   background-color: $white;
@@ -104,6 +104,10 @@
   @media (min-width: $desktop) {
     left: 41%;
   }
+}
+
+.range-filter__toggle:active {
+  background-color: $main-pink;
 }
 
 .range-filter__toggle--fill {

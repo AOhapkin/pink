@@ -131,9 +131,11 @@
 
 .contacts__link:hover {
   color: $main-dark;
+  text-decoration: underline;
 }
 
 .contacts__link:active {
   color: $main-dark;
   opacity: 0.3;
+  text-decoration: none;
 }

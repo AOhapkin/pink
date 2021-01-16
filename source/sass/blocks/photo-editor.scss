@@ -151,6 +151,24 @@
   border-color: $main-pink;
 }
 
+.photo-editor__button--upload:hover {
+  color: $white;
+  background-color: $main-pink;
+}
+
+.photo-editor__button--upload:active {
+  color: $white-30;
+}
+
 .photo-editor__button--cancel {
   opacity: 0.1;
+}
+
+.photo-editor__button--cancel:hover {
+  opacity: 0.3;
+}
+
+.photo-editor__button--cancel:active {
+  color: $white-30;
+  background-color: $main-dark;
 }

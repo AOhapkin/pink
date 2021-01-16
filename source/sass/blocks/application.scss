@@ -636,3 +636,9 @@
   color: $white-30;
   background-color: $submit-green;
 }
+
+.application__button:disabled {
+  color: $white;
+  background-color: $input-border-grey;
+  border-color: $input-border-grey;
+}

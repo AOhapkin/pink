@@ -87,6 +87,12 @@
   }
 }
 
+.reviews__author {
+  @media (min-width: $desktop) {
+    text-align: center;
+  }
+}
+
 .reviews__author-name {
   @include text(18px, 30px, bold, $black);
   margin: 0;

@@ -6,6 +6,7 @@
 .best-photo__link {
   display: block;
   overflow: hidden;
+  height: 137px;
 
   @media (min-width: $tablet) {
     height: 510px;
@@ -19,7 +20,8 @@
 .best-photo__image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 
   @media (min-width: $desktop) {
     height: 100%;
@@ -71,7 +73,7 @@
   @media (min-width: $tablet) {
     position: relative;
     padding: 22px 30px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop) {
