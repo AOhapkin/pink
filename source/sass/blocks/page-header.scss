@@ -15,6 +15,7 @@
   @media (min-width: $tablet) {
     background-image: url("../img/back-tablet.jpg");
     background-size: cover;
+    background-position: bottom 0 center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -209,7 +210,8 @@
   }
 
   @media (min-width: $tablet) {
-    top: 73px;
+    top: auto;
+    bottom: 0;
     right: -15px;
     width: 660px;
     height: 545px;
@@ -222,7 +224,6 @@
   }
 
   @media (min-width: $desktop) {
-    top: 100px;
     right: -119px;
     width: 1050px;
     height: 645px;
@@ -251,7 +252,8 @@
   }
 
   @media (min-width: $tablet) {
-    top: 126px;
+    top: auto;
+    bottom: 148px;
     right: 79px;
     width: 195px;
     height: 346px;
@@ -263,7 +265,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: 162px;
+    bottom: 171px;
     right: 129px;
     width: 230px;
     height: 408px;

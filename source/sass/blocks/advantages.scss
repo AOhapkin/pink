@@ -150,6 +150,16 @@
   }
 }
 
+.advantages__item:nth-child(n+4) {
+  @media (min-width: $desktop) {
+    padding-top: 20px;
+  }
+}
+
+.advantages__item:nth-child(n+4)::before {
+  display: none;
+}
+
 .advantages__item::before {
   @media (min-width: $desktop) {
     position: absolute;
