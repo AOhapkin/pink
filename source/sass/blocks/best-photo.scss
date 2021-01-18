@@ -71,13 +71,16 @@
   background-color: $light-grey;
 
   @media (min-width: $tablet) {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 22px 30px;
     padding-bottom: 14px;
   }
 
   @media (min-width: $desktop) {
     padding: 24px 27px;
+    padding-right: 32px;
     padding-bottom: 14px;
   }
 }
@@ -93,6 +96,10 @@
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-left: 3px;
+  }
 }
 
 .best-photo__text {
@@ -100,6 +107,10 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    order: 2;
+  }
 }
 
 .best-photo__text-br {
@@ -110,14 +121,12 @@
 
 .best-photo__likes {
   @media (min-width: $tablet) {
-    position: absolute;
-    top: 23px;
-    right: 30px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    top: 25px;
-    right: 31px;
+    // position: absolute;
+    // top: 25px;
+    // right: 31px;
   }
 }
