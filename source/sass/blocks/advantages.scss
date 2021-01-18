@@ -126,6 +126,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 22px;
+    row-gap: 90px;
     width: 940px;
     margin-right: auto;
     margin-left: auto;
@@ -148,16 +149,6 @@
     align-items: center;
     padding-top: 287px;
   }
-}
-
-.advantages__item:nth-child(n+4) {
-  @media (min-width: $desktop) {
-    padding-top: 20px;
-  }
-}
-
-.advantages__item:nth-child(n+4)::before {
-  display: none;
 }
 
 .advantages__item::before {
