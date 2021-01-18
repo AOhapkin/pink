@@ -12,13 +12,13 @@
   }
 }
 
-.social-item {
+.social-list__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.social-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,10 +28,10 @@
   border-radius: 50%;
 }
 
-.social-link:hover {
+.social-list__link:hover {
   border: 3px solid $main-dark;
 }
 
-.social-link:active {
+.social-list__link:active {
   opacity: 0.3;
 }
