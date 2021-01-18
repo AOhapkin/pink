@@ -5,7 +5,7 @@
   background-color: $main-dark;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom 210px center;
   background-size: contain;
 
   @media (min-resolution: 2dppx) {
@@ -32,6 +32,7 @@
 
 .page-header--inner-page {
   background-size: 100% auto;
+  background-position: bottom center;
 }
 
 .page-header__top {
