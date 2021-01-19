@@ -53,6 +53,7 @@
   margin-bottom: 41px;
   border-collapse: collapse;
   transform: translateX(-260px);
+  background-color: $white;
 
   @media (min-width: $tablet) {
     transform: none;
@@ -122,12 +123,14 @@
 }
 
 .prices__table-column-head--empty {
-  background: none;
+  padding: 0;
   display: none;
-  border: none;
 
   @media (min-width: $tablet) {
-    display: block;
+    display: table-cell;
+    border: 2px solid $light-grey;
+    background-color: $light-grey;
+    border-bottom: none;
   }
 }
 
@@ -201,7 +204,6 @@
   border: 2px solid $input-border-grey;
   border-radius: 1px 0 0 0;
   border-top: none;
-  background-color: $white;
   width: 280px;
 
   @media (min-width: $tablet) {

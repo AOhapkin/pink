@@ -430,8 +430,8 @@
   background-size: cover;
 }
 
-.application__checkbox:focus + .application__label--checkbox {
-  outline: 1px solid $black;
+.application__checkbox:focus + .application__label--checkbox::before {
+  border: 2px solid $black;
 }
 
 .application__label--radio {
@@ -483,8 +483,8 @@
   }
 }
 
-.application__radio:focus + .application__label--radio {
-  outline: 1px solid $black;
+.application__radio:focus + .application__label--radio::before {
+  border: 2px solid $black;
 }
 
 .application__label--text-input {
@@ -566,7 +566,8 @@
   border-color: $main-dark;
 }
 
-.application__text-input:active {
+.application__text-input:focus {
+  outline: none;
   border-color: $main-pink;
 }
 
