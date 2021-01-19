@@ -13,7 +13,7 @@ const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
-const concat = require('gulp-concat');
+const concat = require("gulp-concat");
 const { use } = require("browser-sync");
 
 // Styles
@@ -43,7 +43,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -106,7 +106,7 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/*.js")
-    .pipe(concat('script.js'))
+    .pipe(concat("script.js"))
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
